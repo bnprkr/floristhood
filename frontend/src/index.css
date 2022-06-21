@@ -1,1 +1,52 @@
-/* TODO Add site wide styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colours */
+  --pastel-green: hsl(159, 30%, 43%);
+  --dark-pink: hsl(338, 46%, 48%);
+  --light-grey: hsl(0, 0%, 97%);
+  --dark-grey: 	hsl(0, 0%, 88%);
+  --body-text: hsl(0, 0%, 17%);
+  --footer-text: 	hsl(0, 0%, 38%);
+
+  /* font sizes */
+  --font-size-1: 72px;
+  --font-size-2: 60px;
+  --font-size-3: 48px;
+  --font-size-4: 36px;
+  --font-size-5: 30px;
+  --font-size-6: 24px;
+  --font-size-7: 20px;
+  --font-size-8: 18px;
+  --font-size-9: 16px;
+  --font-size-10: 14px;
+  --font-size-11: 12px;
+
+  /* spacing sizes */
+  --space-size-1: 768px;
+  --space-size-2: 640px;
+  --space-size-3: 512px;
+  --space-size-4: 384px;
+  --space-size-5: 256px;
+  --space-size-6: 192px;
+  --space-size-7: 128px;
+  --space-size-8: 96px;
+  --space-size-9: 64px;
+  --space-size-10: 48px;
+  --space-size-11: 32px;
+  --space-size-12: 24px;
+  --space-size-13: 16px;
+  --space-size-14: 12px;
+  --space-size-15: 8px;
+  --space-size-16: 4px;
+
+  /* fonts */
+  --logo: 'Tangerine', cursive;
+  --sans-serif-header: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --serif: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
+}

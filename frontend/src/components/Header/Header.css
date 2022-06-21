@@ -1,0 +1,29 @@
+header {
+  padding: 0 var(--space-size-8);
+  background-color: var(--pastel-green);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--space-size-7);
+}
+
+.menu, .icons, .logo {
+  color: var(--light-grey);
+}
+
+.menu, .icons {
+  font-size: var(--font-size-4);
+}
+
+.icons {
+  display: flex;
+  gap: var(--space-size-12);
+}
+
+.logo {
+  font-family: var(--logo);
+  font-size: var(--font-size-2);
+}

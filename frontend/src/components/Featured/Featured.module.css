@@ -1,0 +1,20 @@
+.container {
+  height: 65vh;
+  width: 100%;
+  padding: 0 var(--space-size-8);
+  background-color: var(--dark-pink);
+}
+
+.container>h1 {
+  color: white;
+  font-family: var(--sans-serif-header);
+  line-height: var(--space-size-9);
+  font-size: var(--font-size-3);
+  font-weight: 400;
+  padding: var(--space-size-9) 0;
+}
+
+.container>.thumbnails {
+  display: flex;
+  justify-content: space-between;
+}

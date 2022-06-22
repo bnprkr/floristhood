@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-size-13);
+}
+
+.container>img {
+  height: 200px;
+  width: 200px;
+  border-radius: 40px;
+}
+
+.container>span {
+  color: white;
+  font-family: var(--sans-serif-header);
+  font-size: var(--font-size-8);
+  font-weight: 300;
+  text-align: center;
+}

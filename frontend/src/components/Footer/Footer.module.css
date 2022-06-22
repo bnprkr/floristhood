@@ -1,11 +1,40 @@
 .container {
   height: 45vh;
+  display: flex;
   padding: var(--space-size-8);
   background-color: var(--dark-grey);
+  font-family: var(--sans-serif);
+  color: var(--footer-text);
+  line-height: var(--space-size-11);
+  font-size: var(--font-size-7);
 }
 
 .logo {
   font-family: var(--logo);
   font-size: var(--font-size-2);
+}
+
+.left {
+  width: 25%;
   color: var(--body-text);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  gap: var(--space-size-8);
+  margin-left: var(--space-size-8);
+}
+
+address {
+  font-style: normal;
+}
+
+.social {
+  display: flex;
+  gap: var(--space-size-14);
+  font-size: var(--font-size-3);
 }

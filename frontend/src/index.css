@@ -9,6 +9,10 @@ main {
   margin: 0 auto;
 }
 
+ul {
+  list-style-type: none;
+}
+
 :root {
   /* colours */
   --pastel-green: hsl(159, 30%, 43%);

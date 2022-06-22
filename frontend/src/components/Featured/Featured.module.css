@@ -1,5 +1,5 @@
 .container {
-  height: 65vh;
+  height: 70vh;
   width: 100%;
   padding: 0 var(--space-size-8);
   background-color: var(--dark-pink);
@@ -9,9 +9,9 @@
   color: white;
   font-family: var(--sans-serif-header);
   line-height: var(--space-size-9);
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-heading);
   font-weight: 400;
-  padding: var(--space-size-9) 0;
+  padding: var(--space-size-10) 0;
 }
 
 .container>.thumbnails {

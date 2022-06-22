@@ -1,0 +1,30 @@
+.container { 
+  height: 95vh;
+  padding: var(--space-size-8);
+}
+
+.container>h1 {
+  font-family: var(--sans-serif-header);
+  line-height: var(--space-size-9);
+  font-size: var(--font-size-heading);
+  font-weight: 400;
+  color: var(--body-text);
+  margin-bottom: var(--space-size-12);
+}
+
+.container>p {
+  font-family: var(--sans-serif-header);
+  font-family: var(--sans-serif-header);
+  font-size: var(--font-size-7);
+  font-weight: 300;
+  color: var(--body-text);
+  width: 50%;
+  margin-bottom: var(--space-size-9);
+}
+
+
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-size-10);
+}

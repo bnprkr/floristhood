@@ -1,0 +1,11 @@
+.container {
+  height: 45vh;
+  padding: var(--space-size-8);
+  background-color: var(--dark-grey);
+}
+
+.logo {
+  font-family: var(--logo);
+  font-size: var(--font-size-2);
+  color: var(--body-text);
+}

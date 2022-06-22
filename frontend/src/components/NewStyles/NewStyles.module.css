@@ -1,6 +1,9 @@
 .container { 
-  height: 95vh;
-  padding: var(--space-size-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  padding: 0 var(--space-size-8);
 }
 
 .container>h1 {

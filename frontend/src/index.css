@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+main {
+  max-width: var(--space-size-layout);
+  margin: 0 auto;
+}
+
 :root {
   /* colours */
   --pastel-green: hsl(159, 30%, 43%);
@@ -27,12 +32,14 @@
   --font-size-11: 12px;
 
   /* spacing sizes */
+  --space-size-layout: 1400px;
   --space-size-1: 768px;
   --space-size-2: 640px;
   --space-size-3: 512px;
   --space-size-4: 384px;
   --space-size-5: 256px;
   --space-size-6: 192px;
+  --space-size-button: 168px;
   --space-size-7: 128px;
   --space-size-8: 96px;
   --space-size-9: 64px;

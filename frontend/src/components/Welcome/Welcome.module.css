@@ -1,5 +1,51 @@
+.container {
+  display: flex;
+}
+
 .welcomeImage {
   width: auto;
-  height: 80vh;
+  height: 82vh;
   background-color: red;
+}
+
+.welcomeMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-size-12);
+  padding: 0 var(--space-size-10);
+  width: 50%;
+  background-color: var(--light-grey);
+}
+
+.welcomeMessage>h1, 
+.welcomeMessage>p,
+.welcomeMessage>button
+{
+  color: var(--body-text);
+  font-family: var(--sans-serif-header);
+}
+
+.welcomeMessage>h1 {
+  width: 100%;
+  line-height: var(--space-size-9);
+  font-size: var(--font-size-3);
+  font-weight: 400;
+}
+
+.welcomeMessage>p {
+  width: 60%;
+  font-size: var(--font-size-7);
+  font-weight: 300;
+}
+
+.welcomeMessage>button {
+  width: var(--space-size-button);
+  background-color: var(--dark-pink);
+  border-radius: 40px;
+  border: none;
+  color: white;
+  font-size: var(--font-size-7);
+  font-weight: 500;
+  padding: var(--space-size-14) 0;
 }

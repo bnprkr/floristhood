@@ -18,9 +18,14 @@
   background-color: var(--light-grey);
 }
 
+.button {
+  text-decoration: none;
+  text-align: center;
+}
+
 .welcomeMessage>h1, 
 .welcomeMessage>p,
-.welcomeMessage>button
+.welcomeMessage>.button
 {
   color: var(--body-text);
   font-family: var(--sans-serif-header);
@@ -39,7 +44,7 @@
   font-weight: 300;
 }
 
-.welcomeMessage>button {
+.welcomeMessage>.button {
   width: var(--space-size-button);
   background-color: var(--dark-pink);
   border-radius: 40px;

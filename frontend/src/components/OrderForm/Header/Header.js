@@ -1,3 +1,5 @@
+import styles from "./Header.module.css";
+
 function Heading({ heading1, heading2 }) {
   return (
     <>

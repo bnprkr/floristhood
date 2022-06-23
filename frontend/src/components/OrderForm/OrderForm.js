@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrangementType, Page2, Page3 } from "./index";
+import { ArrangementType, OccasionType, Page3 } from "./index";
 import styles from "./OrderForm.module.css";
 
 function OrderForm() {
@@ -11,10 +11,10 @@ function OrderForm() {
         switch (page) {
           case 1:
             return (
-              <ArrangementType page={page} setPage={setPage} first={false} />
+              <ArrangementType page={page} setPage={setPage} first={true} />
             );
           case 2:
-            return <Page2 page={page} setPage={setPage} />;
+            return <OccasionType page={page} setPage={setPage} first={false} />;
           case 3:
             return <Page3 page={page} setPage={setPage} />;
           default:

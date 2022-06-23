@@ -7,7 +7,7 @@ function Navigation({ page, setPage, first }) {
         {!first && (
           <button
             onClick={() => {
-              setPage(page + 1);
+              setPage(page - 1);
             }}
             className={styles.backButton}
           >

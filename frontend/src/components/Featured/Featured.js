@@ -1,6 +1,12 @@
-import styles from './Featured.module.css'
-import { featuredThumb1, featuredThumb2, featuredThumb3, featuredThumb4, featuredThumb5 } from '../../assets/images'
-import Thumbnail from './Thumbnail/Thumbnail';
+import styles from "./Featured.module.css";
+import {
+  featuredThumb1,
+  featuredThumb2,
+  featuredThumb3,
+  featuredThumb4,
+  featuredThumb5,
+} from "../../assets/images";
+import Thumbnail from "../ThumbnailSmall/Thumbnail";
 
 function Featured() {
   return (

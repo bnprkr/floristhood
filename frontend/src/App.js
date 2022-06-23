@@ -1,11 +1,11 @@
-import Header from './components/Header/Header'
-import Welcome from './components/Welcome/Welcome'
-import Search from './components/Search/Search'
-import Featured from './components/Featured/Featured'
-import NewStyles from './components/NewStyles/NewStyles';
-import Footer from './components/Footer/Footer';
-import { Switch, Route } from 'react-router-dom';
-import BouquetBuilder from './components/BouquetBuilder/BouquetBuilder';
+import Header from "./components/Header/Header";
+import Welcome from "./components/Welcome/Welcome";
+import Search from "./components/Search/Search";
+import Featured from "./components/Featured/Featured";
+import NewStyles from "./components/NewStyles/NewStyles";
+import Footer from "./components/Footer/Footer";
+import { Switch, Route } from "react-router-dom";
+import OrderForm from "./components/OrderForm/OrderForm";
 
 function App() {
   return (
@@ -20,10 +20,9 @@ function App() {
           <Footer />
         </Route>
         <Route exact path="/order">
-          <BouquetBuilder />
+          <OrderForm />
         </Route>
       </Switch>
-
     </>
   );
 }

@@ -10,11 +10,14 @@ header {
   height: 18vh;
 }
 
-.menu, .icons, .logo {
+.menu,
+.icons,
+.logo {
   color: var(--light-grey);
 }
 
-.menu, .icons {
+.menu,
+.icons {
   font-size: var(--font-size-4);
 }
 

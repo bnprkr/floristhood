@@ -1,14 +1,15 @@
-import styles from './Footer.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
+import styles from "./Footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagramSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        <div className={styles.logo}>
-          floristhood
-        </div>
+        <div className={styles.logo}>floristhood</div>
         <div className={styles.social}>
           <FontAwesomeIcon icon={faFacebook} />
           <FontAwesomeIcon icon={faInstagramSquare} />
@@ -33,19 +34,18 @@ function Footer() {
         <div className={styles.contact}>
           <div className={styles.address}>
             <address>
-              29 Lorem ipsum dolor<br/>
-              Consectetur<br/>
-              London<br/>
+              29 Lorem ipsum dolor
+              <br />
+              Consectetur
+              <br />
+              London
+              <br />
               W1A 1AA
             </address>
-
           </div>
-          <div className={styles.email}>
-            info@floristhood.com
-          </div>
+          <div className={styles.email}>info@floristhood.com</div>
         </div>
       </div>
-
     </div>
   );
 }

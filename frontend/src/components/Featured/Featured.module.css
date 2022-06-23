@@ -3,9 +3,10 @@
   width: 100%;
   padding: 0 var(--space-size-8);
   background-color: var(--dark-pink);
+  color: white;
 }
 
-.container>h1 {
+.container > h1 {
   color: white;
   font-family: var(--sans-serif-header);
   line-height: var(--space-size-9);
@@ -14,7 +15,7 @@
   padding: var(--space-size-10) 0;
 }
 
-.container>.thumbnails {
+.container > .thumbnails {
   display: flex;
   justify-content: space-between;
 }

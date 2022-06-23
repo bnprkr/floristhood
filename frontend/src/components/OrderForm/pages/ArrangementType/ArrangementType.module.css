@@ -1,0 +1,7 @@
+.thumbsContainer {
+  height: 100%;
+  padding: var(--space-size-10) 0;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-size-8);
+}

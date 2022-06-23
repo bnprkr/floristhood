@@ -1,4 +1,4 @@
-function Page2({page, setPage}) {
+function Page2({ page, setPage }) {
   setPage(2);
   return (
     <>
@@ -7,14 +7,18 @@ function Page2({page, setPage}) {
         onClick={() => {
           setPage(page - 1);
         }}
-      >Back</button>
+      >
+        Back
+      </button>
       <button
         onClick={() => {
           setPage(page + 1);
         }}
-      >Next</button>
+      >
+        Next
+      </button>
     </>
   );
 }
 
-export default Page2
+export default Page2;

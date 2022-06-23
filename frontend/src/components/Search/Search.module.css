@@ -6,7 +6,7 @@
   height: 45vh;
 }
 
-.container>p {
+.container > p {
   width: 55%;
   color: var(--body-text);
   font-family: var(--sans-serif-header);
@@ -14,7 +14,7 @@
   font-weight: 300;
 }
 
-.container>button {
+.container > button {
   display: flex;
   justify-content: flex-end;
   width: 32%;
@@ -22,7 +22,6 @@
   border-radius: 40px;
   padding: var(--space-size-13);
   background-color: white;
-
 }
 
 .magnifyingGlass {

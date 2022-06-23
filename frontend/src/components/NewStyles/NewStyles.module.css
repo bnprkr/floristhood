@@ -1,4 +1,4 @@
-.container { 
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,7 @@
   padding: 0 var(--space-size-8);
 }
 
-.container>h1 {
+.container > h1 {
   font-family: var(--sans-serif-header);
   line-height: var(--space-size-9);
   font-size: var(--font-size-heading);
@@ -15,7 +15,7 @@
   margin-bottom: var(--space-size-12);
 }
 
-.container>p {
+.container > p {
   font-family: var(--sans-serif-header);
   font-family: var(--sans-serif-header);
   font-size: var(--font-size-7);
@@ -24,7 +24,6 @@
   width: 50%;
   margin-bottom: var(--space-size-9);
 }
-
 
 .thumbnails {
   display: flex;

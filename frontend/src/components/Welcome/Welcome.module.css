@@ -23,28 +23,27 @@
   text-align: center;
 }
 
-.welcomeMessage>h1, 
-.welcomeMessage>p,
-.welcomeMessage>.button
-{
+.welcomeMessage > h1,
+.welcomeMessage > p,
+.welcomeMessage > .button {
   color: var(--body-text);
   font-family: var(--sans-serif-header);
 }
 
-.welcomeMessage>h1 {
+.welcomeMessage > h1 {
   width: 100%;
   line-height: var(--space-size-9);
   font-size: var(--font-size-heading);
   font-weight: 400;
 }
 
-.welcomeMessage>p {
+.welcomeMessage > p {
   width: 60%;
   font-size: var(--font-size-7);
   font-weight: 300;
 }
 
-.welcomeMessage>.button {
+.welcomeMessage > .button {
   width: var(--space-size-button);
   background-color: var(--dark-pink);
   border-radius: 40px;

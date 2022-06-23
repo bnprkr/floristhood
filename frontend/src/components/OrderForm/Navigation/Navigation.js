@@ -22,7 +22,7 @@ function Navigation({ page, setPage, first }) {
           }}
           className={styles.nextButton}
         >
-          Next &gt;
+          Continue &gt;
         </button>
       </div>
     </div>

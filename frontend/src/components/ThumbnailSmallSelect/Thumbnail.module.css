@@ -17,3 +17,21 @@
   font-weight: 300;
   text-align: center;
 }
+
+.imageContainer {
+  position: relative;
+}
+
+.xmark {
+  position: absolute;
+  z-index: 1;
+  left: 85%;
+  top: -5%;
+  background-color: white;
+  color: var(--light-pink);
+  height: var(--space-size-12);
+  width: var(--space-size-12);
+  padding: 2px;
+  border: 2px solid var(--light-pink);
+  border-radius: 50%;
+}

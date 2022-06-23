@@ -1,11 +1,15 @@
 import Header from "../../Header/Header";
 import Navigation from "../../Navigation/Navigation";
 import styles from "./ArrangementType.module.css";
-import Thumbnail from "../../../ThumbnailSmall/Thumbnail";
+import ThumbnailSelect from "../../../ThumbnailSmallSelect/Thumbnail";
 import { boxThumb, bouquetThumb, basketThumb } from "../../../../assets/images";
+import { useState } from "react";
 
 function ArrangementType({ page, setPage, first }) {
   setPage(1);
+
+  const [oneSelected, toggleOneSelected] = useState(false);
+
   return (
     <>
       <Header
@@ -13,9 +17,27 @@ function ArrangementType({ page, setPage, first }) {
         heading2="What kind of arrangement are you looking for?"
       />
       <div className={styles.thumbsContainer}>
-        <Thumbnail text1="Boxed" text2="flowers" imageName={boxThumb} />
-        <Thumbnail text1="Bouquet" text2="flowers" imageName={bouquetThumb} />
-        <Thumbnail text1="Basket" text2="flowers" imageName={basketThumb} />
+        <ThumbnailSelect
+          text1="Boxed"
+          text2="flowers"
+          imageName={boxThumb}
+          oneSelected={oneSelected}
+          toggleOneSelected={toggleOneSelected}
+        />
+        <ThumbnailSelect
+          text1="Bouquet"
+          text2="flowers"
+          imageName={bouquetThumb}
+          oneSelected={oneSelected}
+          toggleOneSelected={toggleOneSelected}
+        />
+        <ThumbnailSelect
+          text1="Basket"
+          text2="flowers"
+          imageName={basketThumb}
+          oneSelected={oneSelected}
+          toggleOneSelected={toggleOneSelected}
+        />
       </div>
       <Navigation first={first} page={page} setPage={setPage} />
     </>

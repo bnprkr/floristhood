@@ -1,15 +1,22 @@
-function Page1({page, setPage}) {
+import Heading from "../Heading/Heading";
+
+function Page1({ page, setPage }) {
   setPage(1);
   return (
     <>
-      <h1>Page 1</h1>
+      <Heading
+        heading1="This is the main heading"
+        heading2="This is the secondary heading"
+      />
       <button
         onClick={() => {
           setPage(page + 1);
         }}
-      >Next</button>
+      >
+        Next
+      </button>
     </>
   );
 }
 
-export default Page1
+export default Page1;

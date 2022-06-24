@@ -4,13 +4,17 @@ import styles from "./OccasionType.module.css";
 import Dropdown from "../../../Dropdown/Dropdown";
 
 function OccasionType({ page, setPage, first }) {
+  const occasions = ["Mother's Day", "Father's Day"];
+  // const recipients = ["Parents", "Grandparents"];
   return (
     <>
       <Header
         heading1="Customise your flowers"
         heading2="Select your occasion and recipient"
       />
-      <div className={styles.menuContainer}></div>
+      <div className={styles.menuContainer}>
+        <Dropdown header="Occasions" items={occasions} />
+      </div>
       <Navigation first={first} page={page} setPage={setPage} />
     </>
   );

@@ -1,10 +1,9 @@
 import Header from "../../Header/Header";
 import Navigation from "../../Navigation/Navigation";
 import styles from "./OccasionType.module.css";
+import Dropdown from "../../../Dropdown/Dropdown";
 
 function OccasionType({ page, setPage, first }) {
-  setPage(2);
-
   return (
     <>
       <Header

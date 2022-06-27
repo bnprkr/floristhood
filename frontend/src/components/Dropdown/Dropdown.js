@@ -13,10 +13,12 @@ function Dropdown({ header, items }) {
 
   const toggleMenu = () => {
     if (!showMenu) {
-      setValue(header);
+      setHeaderTitle(header);
       toggleShowMenu(true);
     } else {
-      setValue(header);
+      if (value) setHeaderTitle(value);
+      else setHeaderTitle(header);
+      toggleShowMenu(false);
     }
   };
 
@@ -27,7 +29,7 @@ function Dropdown({ header, items }) {
   return (
     <div className={styles.container}>
       <ul>
-        <li onClick={() => toggleMenu(!showMenu)}>{headerTitle}</li>
+        <li onClick={toggleMenu}>{headerTitle}</li>
         {showMenu &&
           itemsList.map((item) => {
             return (

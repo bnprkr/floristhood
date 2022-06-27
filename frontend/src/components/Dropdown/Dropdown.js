@@ -47,11 +47,12 @@ function Dropdown({ header, items }) {
         {showMenu &&
           itemsList.map((item) => {
             return (
-              <li key={item.index} onClick={selectItem.bind(null, item)}>
+              <li
+                key={item.index}
+                className={`${item.selected ? styles.listSelected : ""}`}
+                onClick={selectItem.bind(null, item)}
+              >
                 <span className={styles.listItem}>{item.value}</span>
-                <span className={styles.listSelected}>
-                  {item.selected && "tick"}
-                </span>
               </li>
             );
           })}

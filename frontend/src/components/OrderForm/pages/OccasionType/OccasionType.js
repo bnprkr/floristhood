@@ -5,7 +5,7 @@ import Dropdown from "../../../Dropdown/Dropdown";
 
 function OccasionType({ page, setPage, first }) {
   const occasions = ["Mother's Day", "Father's Day"];
-  // const recipients = ["Parents", "Grandparents"];
+  const recipients = ["Parents", "Grandparents"];
   return (
     <>
       <Header
@@ -13,7 +13,8 @@ function OccasionType({ page, setPage, first }) {
         heading2="Select your occasion and recipient"
       />
       <div className={styles.menuContainer}>
-        <Dropdown header="Occasions" items={occasions} />
+        <Dropdown header="Occasion" items={occasions} />
+        <Dropdown header="Recipient" items={recipients} />
       </div>
       <Navigation first={first} page={page} setPage={setPage} />
     </>

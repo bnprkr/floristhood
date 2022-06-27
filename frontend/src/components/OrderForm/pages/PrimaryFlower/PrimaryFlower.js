@@ -17,13 +17,15 @@ function PrimaryFlower(page, setPage) {
       <div className={styles.thumbsContainer}>
         {Array.from({ length: 9 }, (_, i) => {
           return (
-            <ThumbnailSelect
-              text1="Quisque pellentesque"
-              text2=""
-              imageName={thumbs[i]}
-              oneSelected={oneSelected}
-              toggleOneSelected={toggleOneSelected}
-            />
+            <div className={styles.thumbnail}>
+              <ThumbnailSelect
+                text1="Quisque pellentesque"
+                text2=""
+                imageName={thumbs[i]}
+                oneSelected={oneSelected}
+                toggleOneSelected={toggleOneSelected}
+              />
+            </div>
           );
         })}
       </div>

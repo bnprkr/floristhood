@@ -1,0 +1,11 @@
+.thumbsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: auto;
+  row-gap: var(--space-size-9);
+  padding: var(--space-size-9);
+}
+
+.thumbnail {
+  flex: 1 0 30%;
+}

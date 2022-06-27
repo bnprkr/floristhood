@@ -7,8 +7,6 @@
   max-width: 100%;
   height: auto;
   max-height: 82vh;
-  /* max-width: 500px; */
-  /* height: 82vh; */
   object-fit: contain;
 }
 
@@ -18,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 3%;
-  padding: 0 var(--space-size-10);
+  padding: 0 4%;
   width: 100%;
   background-color: var(--light-grey);
 }
@@ -38,23 +36,21 @@
 .welcomeMessage > h1 {
   width: 100%;
   line-height: 150%;
-  font-size: var(--font-size-heading);
   font-weight: 400;
 }
 
 .welcomeMessage > p {
-  width: 60%;
-  font-size: var(--font-size-7);
+  max-width: var(--space-size-4);
+  width: 100%;
   font-weight: 300;
 }
 
 .welcomeMessage > .button {
-  width: 25%;
+  align-self: flex-start;
   background-color: var(--dark-pink);
   border-radius: 40px;
   border: none;
   color: white;
-  font-size: var(--font-size-7);
   font-weight: 500;
-  padding: 2% 0;
+  padding: 2% 4%;
 }

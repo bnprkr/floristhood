@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrangementType, OccasionType, Page3 } from "./index";
+import { ArrangementType, OccasionType, PrimaryFlower } from "./index";
 import styles from "./OrderForm.module.css";
 
 function OrderForm() {
@@ -14,12 +14,12 @@ function OrderForm() {
               <ArrangementType page={page} setPage={setPage} first={true} />
             );
           case 2:
-            return <OccasionType page={page} setPage={setPage} first={false} />;
+            return <OccasionType page={page} setPage={setPage} />;
           case 3:
-            return <Page3 page={page} setPage={setPage} />;
+            return <PrimaryFlower page={page} setPage={setPage} />;
           default:
             return (
-              <ArrangementType page={page} setPage={setPage} first={false} />
+              <ArrangementType page={page} setPage={setPage} first={true} />
             );
         }
       })()}

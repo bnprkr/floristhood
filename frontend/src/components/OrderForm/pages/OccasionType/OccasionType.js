@@ -3,7 +3,7 @@ import Navigation from "../../Navigation/Navigation";
 import styles from "./OccasionType.module.css";
 import Dropdown from "../../../Dropdown/Dropdown";
 
-function OccasionType({ page, setPage, first }) {
+function OccasionType({ page, setPage }) {
   const occasions = ["Mother's Day", "Father's Day"];
   const recipients = ["Parents", "Grandparents"];
   return (
@@ -16,7 +16,7 @@ function OccasionType({ page, setPage, first }) {
         <Dropdown header="Occasion" items={occasions} />
         <Dropdown header="Recipient" items={recipients} />
       </div>
-      <Navigation first={first} page={page} setPage={setPage} />
+      <Navigation page={page} setPage={setPage} />
     </>
   );
 }

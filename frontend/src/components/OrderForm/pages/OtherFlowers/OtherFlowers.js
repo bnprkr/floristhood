@@ -23,7 +23,7 @@ function OtherFlowers({ page, setPage }) {
         heading1="Customise your flowers"
         heading2="Recommendations for flowers based on your primary flower"
       />
-      <p>
+      <p className={styles.introText}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec
         gravida neque. Proin tincidunt diam elit, ac malesuada.
       </p>

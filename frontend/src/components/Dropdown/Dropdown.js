@@ -3,7 +3,7 @@ import styles from "./Dropdown.module.css";
 
 function Dropdown({ header, items }) {
   const [showMenu, toggleShowMenu] = useState(false);
-  const [headerTitle, setHeaderTitle] = useState(header);
+  const [menuTitle, setMenuTitle] = useState(header);
   const [value, setValue] = useState();
   const [itemsList, updateItemsList] = useState(
     items.map((item, i) => {
@@ -13,17 +13,17 @@ function Dropdown({ header, items }) {
 
   useEffect(() => {
     if (value) {
-      setHeaderTitle(value);
+      setMenuTitle(value);
       toggleShowMenu(false);
     }
   }, [value]);
 
   const toggleMenu = () => {
     if (!showMenu) {
-      setHeaderTitle(header);
+      setMenuTitle(header);
       toggleShowMenu(true);
     } else {
-      if (value) setHeaderTitle(value);
+      if (value) setMenuTitle(value);
       toggleShowMenu(false);
     }
   };
@@ -43,7 +43,7 @@ function Dropdown({ header, items }) {
   return (
     <div className={styles.container}>
       <ul>
-        <li onClick={toggleMenu}>{headerTitle}</li>
+        <li onClick={toggleMenu}>{menuTitle}</li>
         {showMenu &&
           itemsList.map((item) => {
             return (

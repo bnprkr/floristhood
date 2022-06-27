@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, flushSync, useEffect } from "react";
 import styles from "./Dropdown.module.css";
 
 function Dropdown({ header, items }) {
@@ -11,19 +11,33 @@ function Dropdown({ header, items }) {
     })
   );
 
+  useEffect(() => {
+    if (value) {
+      setHeaderTitle(value);
+      toggleShowMenu(false);
+    }
+  }, [value]);
+
   const toggleMenu = () => {
     if (!showMenu) {
       setHeaderTitle(header);
       toggleShowMenu(true);
     } else {
       if (value) setHeaderTitle(value);
-      else setHeaderTitle(header);
       toggleShowMenu(false);
     }
   };
 
   const selectItem = (item) => {
-    console.log(item);
+    updateItemsList((prevState) => {
+      return prevState.map((el) => {
+        if (el.index === item.index) el.selected = true;
+        else el.selected = false;
+        return el;
+      });
+    });
+
+    setValue(item.value);
   };
 
   return (
@@ -33,11 +47,7 @@ function Dropdown({ header, items }) {
         {showMenu &&
           itemsList.map((item) => {
             return (
-              <li
-                key={item.index}
-                value={item.value}
-                onClick={selectItem.bind(null, item)}
-              >
+              <li key={item.index} onClick={selectItem.bind(null, item)}>
                 <span className={styles.listItem}>{item.value}</span>
                 <span className={styles.listSelected}>
                   {item.selected && "tick"}

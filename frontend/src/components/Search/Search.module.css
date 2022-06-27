@@ -9,8 +9,6 @@
 .container > p {
   width: 55%;
   color: var(--body-text);
-  font-family: var(--sans-serif-header);
-  font-size: var(--font-size-7);
   font-weight: 300;
 }
 

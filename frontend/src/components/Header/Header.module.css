@@ -1,5 +1,5 @@
 header {
-  padding: 0 var(--space-size-8);
+  padding: 0 6%;
   background-color: var(--pastel-green);
 }
 
@@ -18,15 +18,17 @@ header {
 
 .menu,
 .icons {
-  font-size: var(--font-size-4);
+  width: 15%;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
 
 .icons {
   display: flex;
-  gap: var(--space-size-12);
+  gap: var(--space-size-11);
+  justify-content: flex-end;
 }
 
 .logo {
   font-family: var(--logo);
-  font-size: var(--font-size-2);
+  font-size: clamp(3rem, 5vw, 4rem);
 }

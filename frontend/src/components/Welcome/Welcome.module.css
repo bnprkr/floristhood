@@ -3,16 +3,21 @@
 }
 
 .welcomeImage {
-  width: auto;
-  height: 82vh;
-  object-fit: cover;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  max-height: 82vh;
+  /* max-width: 500px; */
+  /* height: 82vh; */
+  object-fit: contain;
 }
 
 .welcomeMessage {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--space-size-12);
+  gap: 3%;
   padding: 0 var(--space-size-10);
   width: 100%;
   background-color: var(--light-grey);
@@ -32,7 +37,7 @@
 
 .welcomeMessage > h1 {
   width: 100%;
-  line-height: var(--space-size-9);
+  line-height: 150%;
   font-size: var(--font-size-heading);
   font-weight: 400;
 }
@@ -44,12 +49,12 @@
 }
 
 .welcomeMessage > .button {
-  width: var(--space-size-button);
+  width: 25%;
   background-color: var(--dark-pink);
   border-radius: 40px;
   border: none;
   color: white;
   font-size: var(--font-size-7);
   font-weight: 500;
-  padding: var(--space-size-14) 0;
+  padding: 2% 0;
 }

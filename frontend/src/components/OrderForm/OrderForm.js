@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { ArrangementType, OccasionType, PrimaryFlower } from "./index";
+import {
+  ArrangementType,
+  OccasionType,
+  PrimaryFlower,
+  OtherFlowers,
+} from "./index";
 import styles from "./OrderForm.module.css";
 
 function OrderForm() {
@@ -17,6 +22,8 @@ function OrderForm() {
             return <OccasionType page={page} setPage={setPage} />;
           case 3:
             return <PrimaryFlower page={page} setPage={setPage} />;
+          case 4:
+            return <OtherFlowers page={page} setPage={setPage} />;
           default:
             return (
               <ArrangementType page={page} setPage={setPage} first={true} />

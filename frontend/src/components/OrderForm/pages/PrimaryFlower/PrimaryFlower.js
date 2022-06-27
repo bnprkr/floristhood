@@ -5,7 +5,7 @@ import styles from "./PrimaryFlower.module.css";
 import ThumbnailSelect from "../../../ThumbnailSmallSelect/Thumbnail";
 import { thumbs } from "../../../../assets/images";
 
-function PrimaryFlower(page, setPage) {
+function PrimaryFlower({ page, setPage }) {
   const [oneSelected, toggleOneSelected] = useState(false);
 
   return (
@@ -17,7 +17,7 @@ function PrimaryFlower(page, setPage) {
       <div className={styles.thumbsContainer}>
         {Array.from({ length: 9 }, (_, i) => {
           return (
-            <div className={styles.thumbnail}>
+            <div key={i} className={styles.thumbnail}>
               <ThumbnailSelect
                 text1="Quisque pellentesque"
                 text2=""

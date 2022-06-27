@@ -6,8 +6,6 @@ import { boxThumb, bouquetThumb, basketThumb } from "../../../../assets/images";
 import { useState } from "react";
 
 function ArrangementType({ page, setPage, first }) {
-  setPage(1);
-
   const [oneSelected, toggleOneSelected] = useState(false);
 
   return (

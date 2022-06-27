@@ -2,12 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 var(--space-size-8);
+  gap: 5%;
+  padding: 0 6%;
   height: 45vh;
 }
 
 .container > p {
-  width: 55%;
+  max-width: var(--space-size-2);
+  width: 100%;
   color: var(--body-text);
   font-weight: 300;
 }
@@ -15,10 +17,13 @@
 .container > button {
   display: flex;
   justify-content: flex-end;
-  width: 32%;
+  min-width: var(--space-size-5);
+  max-width: var(--space-size-4);
+  width: 100%;
   border: 3px solid var(--pastel-green-light);
   border-radius: 40px;
   padding: var(--space-size-13);
+  padding: 1.5%;
   background-color: white;
 }
 

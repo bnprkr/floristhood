@@ -4,6 +4,7 @@ import {
   OccasionType,
   PrimaryFlower,
   OtherFlowers,
+  Shipping,
 } from "./index";
 import styles from "./OrderForm.module.css";
 
@@ -24,6 +25,8 @@ function OrderForm() {
             return <PrimaryFlower page={page} setPage={setPage} />;
           case 4:
             return <OtherFlowers page={page} setPage={setPage} />;
+          case 5:
+            return <Shipping page={page} setPage={setPage} />;
           default:
             return (
               <ArrangementType page={page} setPage={setPage} first={true} />

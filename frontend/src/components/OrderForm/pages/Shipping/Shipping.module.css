@@ -1,0 +1,16 @@
+.formContainer {
+  border: 1px solid red;
+  /* height: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  row-gap: 10%;
+}
+
+.formContainer > input {
+  flex-basis: 30%;
+  align-self: center;
+  border: 2px solid var(--pastel-green-light);
+  border-radius: 20px;
+  padding: var(--space-size-13);
+}

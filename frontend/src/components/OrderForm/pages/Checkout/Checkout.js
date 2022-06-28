@@ -9,11 +9,9 @@ function Checkout({ page, setPage }) {
     <>
       <Header heading1="Customise your flowers" heading2="Checkout" />
       <div className={styles.container}>
-        <Thumbnail
-          text1="Quisque pellentesque"
-          text2=""
-          imageName={bouquetThumb}
-        />
+        <div className={styles.thumbnail}>
+          <Thumbnail text1="" text2="" imageName={bouquetThumb} />
+        </div>
         <div className={styles.content}>
           <h1>DELIVERY INFO</h1>
           <p>

@@ -19,18 +19,18 @@
 
 .content > h1,
 .content > p {
-  margin-bottom: 1%;
+  margin-bottom: min(3%, var(--space-size-14));
 }
 
 .order {
   display: flex;
-  gap: 5%;
+  gap: min(7%, var(--space-size-11));
 }
 
 .price {
   font-weight: 500;
   font-family: var(--sans-serif-header);
-  font-size: clamp(1rem, 3.5vw, 2.5rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
 }
 
 .order > button {

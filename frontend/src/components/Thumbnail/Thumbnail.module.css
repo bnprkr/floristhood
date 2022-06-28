@@ -12,8 +12,5 @@
 }
 
 .container > span {
-  font-family: var(--sans-serif-header);
-  font-size: var(--font-size-8);
-  font-weight: 300;
   text-align: center;
 }

@@ -1,7 +1,8 @@
 .menuContainer {
   height: 100%;
-  padding: var(--space-size-10) 0;
+  max-height: 400px;
+  padding: 5% 0;
   display: flex;
   justify-content: center;
-  gap: var(--space-size-8);
+  gap: 10%;
 }

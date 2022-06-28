@@ -28,7 +28,8 @@ a {
   font-weight: 300;
 }
 
-p {
+p,
+span {
   font-family: var(--sans-serif-header);
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 300;

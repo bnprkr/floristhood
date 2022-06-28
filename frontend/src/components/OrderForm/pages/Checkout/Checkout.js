@@ -2,7 +2,7 @@ import Header from "../../Header/Header";
 import Navigation from "../../Navigation/Navigation";
 import styles from "./Checkout.module.css";
 import { boxThumb, bouquetThumb, basketThumb } from "../../../../assets/images";
-import Thumbnail from "../../../ThumbnailSmall/Thumbnail";
+import Thumbnail from "../../../Thumbnail/Thumbnail";
 
 function Checkout({ page, setPage }) {
   return (

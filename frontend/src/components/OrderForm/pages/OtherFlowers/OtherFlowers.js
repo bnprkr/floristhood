@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Header from "../../Header/Header";
 import Navigation from "../../Navigation/Navigation";
 import styles from "./OtherFlowers.module.css";
-import ThumbnailSelect from "../../../ThumbnailSmallSelect/Thumbnail";
+import ThumbnailSelect from "../../../ThumbnailSelect/Thumbnail";
 import { thumbs } from "../../../../assets/images";
 
 function OtherFlowers({ page, setPage }) {

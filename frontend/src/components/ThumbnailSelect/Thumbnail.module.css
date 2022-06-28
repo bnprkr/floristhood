@@ -6,15 +6,12 @@
 }
 
 .imageContainer > img {
-  height: 200px;
-  width: 200px;
-  border-radius: 40px;
+  width: 100%;
+  height: auto;
+  border-radius: 15%;
 }
 
 .container > span {
-  font-family: var(--sans-serif-header);
-  font-size: var(--font-size-8);
-  font-weight: 300;
   text-align: center;
 }
 

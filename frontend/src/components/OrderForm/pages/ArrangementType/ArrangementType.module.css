@@ -1,10 +1,11 @@
 .thumbsContainer {
-  height: 100%;
-  padding: var(--space-size-10) 0;
+  flex-grow: 1;
+  padding: 3% 0;
   display: flex;
   justify-content: center;
-  gap: var(--space-size-8);
+  gap: 8%;
 }
 
 .thumbnail {
+  width: 25%;
 }

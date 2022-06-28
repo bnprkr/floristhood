@@ -1,7 +1,7 @@
 import Header from "../../Header/Header";
 import Navigation from "../../Navigation/Navigation";
 import styles from "./ArrangementType.module.css";
-import ThumbnailSelect from "../../../ThumbnailSmallSelect/Thumbnail";
+import ThumbnailSelect from "../../../ThumbnailSelect/Thumbnail";
 import { boxThumb, bouquetThumb, basketThumb } from "../../../../assets/images";
 import { useState } from "react";
 
@@ -18,7 +18,7 @@ function ArrangementType({ page, setPage, first }) {
         <div className={styles.thumbnail}>
           <ThumbnailSelect
             text1="Boxed"
-            text2="flowers"
+            text2=""
             imageName={boxThumb}
             oneSelected={oneSelected}
             toggleOneSelected={toggleOneSelected}
@@ -27,7 +27,7 @@ function ArrangementType({ page, setPage, first }) {
         <div className={styles.thumbnail}>
           <ThumbnailSelect
             text1="Bouquet"
-            text2="flowers"
+            text2=""
             imageName={bouquetThumb}
             oneSelected={oneSelected}
             toggleOneSelected={toggleOneSelected}
@@ -36,7 +36,7 @@ function ArrangementType({ page, setPage, first }) {
         <div className={styles.thumbnail}>
           <ThumbnailSelect
             text1="Basket"
-            text2="flowers"
+            text2=""
             imageName={basketThumb}
             oneSelected={oneSelected}
             toggleOneSelected={toggleOneSelected}

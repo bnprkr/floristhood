@@ -6,7 +6,7 @@ import {
   featuredThumb4,
   featuredThumb5,
 } from "../../assets/images";
-import Thumbnail from "../ThumbnailSmall/Thumbnail";
+import Thumbnail from "../Thumbnail/Thumbnail";
 
 function Featured() {
   return (

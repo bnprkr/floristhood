@@ -4,6 +4,7 @@ import PrimaryFlower from "./pages/PrimaryFlower/PrimaryFlower";
 import OtherFlowers from "./pages/OtherFlowers/OtherFlowers";
 import Shipping from "./pages/Shipping/Shipping";
 import Checkout from "./pages/Checkout/Checkout";
+import OrderConfirmation from "./pages/OrderConfirmation/OrderConfirmation";
 
 export {
   ArrangementType,
@@ -12,4 +13,5 @@ export {
   OtherFlowers,
   Shipping,
   Checkout,
+  OrderConfirmation,
 };

@@ -6,6 +6,7 @@ import {
   OtherFlowers,
   Shipping,
   Checkout,
+  OrderConfirmation,
 } from "./index";
 import styles from "./OrderForm.module.css";
 
@@ -30,6 +31,8 @@ function OrderForm() {
             return <Shipping page={page} setPage={setPage} />;
           case 6:
             return <Checkout page={page} setPage={setPage} />;
+          case 7:
+            return <OrderConfirmation page={page} setPage={setPage} />;
           default:
             return (
               <ArrangementType page={page} setPage={setPage} first={true} />

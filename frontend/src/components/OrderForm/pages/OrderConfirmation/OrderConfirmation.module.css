@@ -1,0 +1,21 @@
+.container {
+  flex-grow: 1;
+}
+
+.confirmMessage,
+.info {
+  margin: 5% 0;
+}
+
+.confirmMessage {
+  font-weight: 400;
+  font-family: var(--sans-serif-header);
+  font-size: clamp(1rem, 3.5vw, 2rem);
+}
+
+.info,
+.info > a {
+  font-family: var(--sans-serif-header);
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+}

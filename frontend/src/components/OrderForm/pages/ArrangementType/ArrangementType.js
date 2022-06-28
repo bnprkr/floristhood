@@ -15,27 +15,33 @@ function ArrangementType({ page, setPage, first }) {
         heading2="What kind of arrangement are you looking for?"
       />
       <div className={styles.thumbsContainer}>
-        <ThumbnailSelect
-          text1="Boxed"
-          text2="flowers"
-          imageName={boxThumb}
-          oneSelected={oneSelected}
-          toggleOneSelected={toggleOneSelected}
-        />
-        <ThumbnailSelect
-          text1="Bouquet"
-          text2="flowers"
-          imageName={bouquetThumb}
-          oneSelected={oneSelected}
-          toggleOneSelected={toggleOneSelected}
-        />
-        <ThumbnailSelect
-          text1="Basket"
-          text2="flowers"
-          imageName={basketThumb}
-          oneSelected={oneSelected}
-          toggleOneSelected={toggleOneSelected}
-        />
+        <div className={styles.thumbnail}>
+          <ThumbnailSelect
+            text1="Boxed"
+            text2="flowers"
+            imageName={boxThumb}
+            oneSelected={oneSelected}
+            toggleOneSelected={toggleOneSelected}
+          />
+        </div>
+        <div className={styles.thumbnail}>
+          <ThumbnailSelect
+            text1="Bouquet"
+            text2="flowers"
+            imageName={bouquetThumb}
+            oneSelected={oneSelected}
+            toggleOneSelected={toggleOneSelected}
+          />
+        </div>
+        <div className={styles.thumbnail}>
+          <ThumbnailSelect
+            text1="Basket"
+            text2="flowers"
+            imageName={basketThumb}
+            oneSelected={oneSelected}
+            toggleOneSelected={toggleOneSelected}
+          />
+        </div>
       </div>
       <Navigation first={first} page={page} setPage={setPage} />
     </>

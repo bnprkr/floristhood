@@ -3,5 +3,13 @@ import OccasionType from "./pages/OccasionType/OccasionType";
 import PrimaryFlower from "./pages/PrimaryFlower/PrimaryFlower";
 import OtherFlowers from "./pages/OtherFlowers/OtherFlowers";
 import Shipping from "./pages/Shipping/Shipping";
+import Checkout from "./pages/Checkout/Checkout";
 
-export { ArrangementType, OccasionType, PrimaryFlower, OtherFlowers, Shipping };
+export {
+  ArrangementType,
+  OccasionType,
+  PrimaryFlower,
+  OtherFlowers,
+  Shipping,
+  Checkout,
+};

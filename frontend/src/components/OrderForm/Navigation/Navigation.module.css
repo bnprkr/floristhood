@@ -12,6 +12,6 @@
   cursor: pointer;
   color: var(--body-text);
   font-family: var(--sans-serif-header);
-  font-size: var(--font-size-6);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 300;
 }

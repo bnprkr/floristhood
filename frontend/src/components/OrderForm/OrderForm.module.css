@@ -2,5 +2,5 @@
   display: flex;
   flex-direction: column;
   min-height: 82vh;
-  padding: var(--space-size-9);
+  padding: 4% 6%;
 }

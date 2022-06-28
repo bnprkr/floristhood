@@ -5,12 +5,12 @@ import { useState } from "react";
 
 function Shipping({ page, setPage }) {
   const [shippingValues, setShippingValues] = useState({
-    firstname: "",
-    lastname: "",
-    address1: "",
+    firstname: "A",
+    lastname: "Person",
+    address1: "24 The Street",
     address2: "",
-    city: "",
-    postcode: "",
+    city: "London",
+    postcode: "E1 1AA",
   });
 
   function handleChange(e) {

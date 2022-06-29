@@ -1,17 +1,17 @@
 .container {
   height: 45vh;
   display: flex;
-  padding: var(--space-size-8);
+  padding: 7%;
   background-color: var(--dark-grey);
   font-family: var(--sans-serif);
   color: var(--footer-text);
-  line-height: var(--space-size-11);
-  font-size: var(--font-size-7);
+  line-height: 160%;
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .logo {
   font-family: var(--logo);
-  font-size: var(--font-size-2);
+  font-size: clamp(3rem, 5vw, 4rem);
 }
 
 .left {
@@ -24,9 +24,11 @@
 }
 
 .right {
+  width: 100%;
   display: flex;
-  gap: var(--space-size-8);
-  margin-left: var(--space-size-8);
+  justify-content: center;
+  gap: 10%;
+  margin-left: 8%;
 }
 
 address {
@@ -35,6 +37,6 @@ address {
 
 .social {
   display: flex;
-  gap: var(--space-size-14);
-  font-size: var(--font-size-3);
+  gap: 6%;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
 }

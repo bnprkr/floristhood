@@ -8,6 +8,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 18vh;
+  max-height: var(--space-size-7);
 }
 
 .menu,

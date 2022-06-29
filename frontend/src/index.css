@@ -100,6 +100,9 @@ ul {
   --space-size-15: 8px;
   --space-size-16: 4px;
 
+  /* breakpoints */
+  --mobile-only: 599px;
+
   /* fonts */
   --logo: "Tangerine", cursive;
   --sans-serif-header: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",

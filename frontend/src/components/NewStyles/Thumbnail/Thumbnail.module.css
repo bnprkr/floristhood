@@ -1,8 +1,9 @@
 .container {
   display: flex;
   border-radius: 40px;
-  max-width: 35vw;
+  max-width: var(--space-size-2-half);
   background-color: var(--pastel-green);
+  aspect-ratio: 16/9;
 }
 
 .image,
@@ -21,7 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: var(--space-size-11) 0 var(--space-size-12) var(--space-size-11);
+  padding: 6% 0 4% 6%;
   border-radius: 0 40px 40px 0;
 }
 
@@ -33,9 +34,8 @@
 }
 
 .text > h2 {
-  font-size: var(--font-size-6);
   font-weight: 400;
-  padding-bottom: var(--space-size-14);
+  padding-bottom: 5%;
 }
 
 .text > p {
@@ -50,6 +50,7 @@
   border: none;
   color: var(--body-text);
   font-size: var(--font-size-7);
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 500;
   padding: var(--space-size-14) 0;
   margin-top: var(--space-size-14);

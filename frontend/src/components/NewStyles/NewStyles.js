@@ -10,9 +10,13 @@ function NewStyles() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
         tincidunt quis tortor at dignissim.
       </p>
-      <div className={styles.thumbnails}>
-        <Thumbnail title="British Tulips" imageName={newThumb1} />
-        <Thumbnail title="Hand-tied Flowers" imageName={newThumb2} />
+      <div className={styles.thumbnailContainer}>
+        <div className={styles.thumbnail}>
+          <Thumbnail title="British Tulips" imageName={newThumb1} />
+        </div>
+        <div className={styles.thumbnail}>
+          <Thumbnail title="Hand-tied Flowers" imageName={newThumb2} />
+        </div>
       </div>
     </div>
   );

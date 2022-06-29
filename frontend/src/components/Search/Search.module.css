@@ -14,7 +14,7 @@
   font-weight: 300;
 }
 
-.container > button {
+.search {
   display: flex;
   justify-content: flex-end;
   min-width: var(--space-size-5);
@@ -27,7 +27,22 @@
   background-color: white;
 }
 
+.hide {
+  display: none;
+}
+
+.search {
+  max-width: 100%;
+}
+
 .magnifyingGlass {
+  margin-right: 1%;
+  font-size: var(--font-size-6);
+  color: var(--pastel-green-light);
+}
+
+.close {
+  margin-right: 1%;
   font-size: var(--font-size-6);
   color: var(--pastel-green-light);
 }

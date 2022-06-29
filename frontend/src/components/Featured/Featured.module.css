@@ -1,21 +1,20 @@
 .container {
   height: 70vh;
   width: 100%;
-  padding: 0 var(--space-size-8);
+  padding: 0 6%;
   background-color: var(--dark-pink);
   color: white;
 }
 
 .container > h1 {
   color: white;
-  font-family: var(--sans-serif-header);
-  line-height: var(--space-size-9);
-  font-size: var(--font-size-heading);
-  font-weight: 400;
-  padding: var(--space-size-10) 0;
+  padding: 4% 0;
 }
 
-.container > .thumbnails {
+.thumbnails {
   display: flex;
+  gap: 2%;
   justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: auto;
 }

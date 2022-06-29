@@ -4,6 +4,14 @@ import styles from "./Search.module.css";
 import { useState, useRef } from "react";
 import { useOnClickOutside } from "../hooks";
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
 function Search() {
   const [open, setOpen] = useState(false);
 

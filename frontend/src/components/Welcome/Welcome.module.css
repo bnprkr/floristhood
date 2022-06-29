@@ -70,4 +70,8 @@
     height: 85vh;
     /* height: 100%; */
   }
+
+  .welcomeMessage > h1 {
+    font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+  }
 }

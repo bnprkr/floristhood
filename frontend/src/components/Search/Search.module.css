@@ -46,3 +46,13 @@
   font-size: var(--font-size-6);
   color: var(--pastel-green-light);
 }
+
+@media only screen and (max-width: 767px) {
+  .container > p {
+    display: none;
+  }
+
+  .container {
+    height: 30vh;
+  }
+}

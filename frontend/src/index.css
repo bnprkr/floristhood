@@ -28,7 +28,7 @@ h6 {
   padding: 0;
   font-weight: 400;
   font-family: var(--sans-serif-header);
-  font-size: clamp(1rem, 3.5vw, 2.8rem);
+  font-size: clamp(1.2rem, 3.5vw, 2.8rem);
 }
 
 h2,

@@ -12,12 +12,22 @@ function Featured() {
   return (
     <div className={styles.container}>
       <h1>Featured Arrangements</h1>
-      <div className={styles.thumbnails}>
-        <Thumbnail imageName={featuredThumb1} />
-        <Thumbnail imageName={featuredThumb2} />
-        <Thumbnail imageName={featuredThumb3} />
-        <Thumbnail imageName={featuredThumb4} />
-        <Thumbnail imageName={featuredThumb5} />
+      <div className={styles.thumbnailContainer}>
+        <div className={styles.thumbnail}>
+          <Thumbnail imageName={featuredThumb1} />
+        </div>
+        <div className={styles.thumbnail}>
+          <Thumbnail imageName={featuredThumb2} />
+        </div>
+        <div className={styles.thumbnail}>
+          <Thumbnail imageName={featuredThumb3} />
+        </div>
+        <div className={styles.thumbnail}>
+          <Thumbnail imageName={featuredThumb4} />
+        </div>
+        <div className={styles.thumbnail}>
+          <Thumbnail imageName={featuredThumb5} />
+        </div>
       </div>
     </div>
   );

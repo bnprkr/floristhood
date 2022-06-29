@@ -8,13 +8,27 @@
 
 .container > h1 {
   color: white;
-  padding: 5% 0;
+  padding: max(5%, var(--space-size-10)) 0;
 }
 
-.thumbnails {
+.thumbnailContainer {
   display: flex;
-  gap: 2%;
+  gap: max(4%, var(--space-size-11));
   justify-content: space-between;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .thumbnailContainer {
+    overflow-x: scroll;
+  }
+
+  .thumbnail {
+    flex: none;
+  }
+
+  .container > h1 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  }
 }

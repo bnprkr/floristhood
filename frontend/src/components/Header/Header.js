@@ -6,12 +6,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Header.module.css";
 
-function Header() {
+function Header({ open, setOpen }) {
   return (
     <header>
       <div className={styles.container}>
         <div className={styles.menu}>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} onClick={() => setOpen(!open)} />
         </div>
         <div className={styles.logo}>floristhood</div>
         <div className={styles.icons}>

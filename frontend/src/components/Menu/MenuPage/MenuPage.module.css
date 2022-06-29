@@ -1,8 +1,32 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: bisque;
+  background-color: var(--light-grey);
+  padding: 12% 8% 6% 8%;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.menuLinks {
+  flex-grow: 1;
+}
+
+.menuItem {
+  display: block;
+}
+
+.menuItem > a {
+  color: var(--pastel-green);
+  font-weight: 400;
+  font-family: var(--sans-serif-header);
+  font-size: clamp(1rem, 3.5vw, 2.8rem);
+}
+
+.logo {
+  font-family: var(--logo);
+  font-size: clamp(1.5rem, 5vw, 3rem);
 }

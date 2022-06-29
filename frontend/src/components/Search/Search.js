@@ -1,10 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faXmark } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Search.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useOnClickOutside } from "../hooks";
 
 function Search() {
   const [open, setOpen] = useState(false);
+
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
 
   return (
     <div className={styles.container}>
@@ -14,6 +18,7 @@ function Search() {
         efficitur hendrerit, libero dui rhoncus.
       </p>
       <button
+        ref={node}
         className={styles.search}
         onClick={!open ? () => setOpen(!open) : ""}
       >

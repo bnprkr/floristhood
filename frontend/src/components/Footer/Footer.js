@@ -22,11 +22,11 @@ function Footer() {
             <li>Delivery Details</li>
             <li>Accessibility</li>
             <li>Privacy Policy</li>
-            <li>Cookie Policy</li>
           </ul>
         </div>
         <div className={styles.secondMenu}>
           <ul>
+            <li>Cookie Policy</li>
             <li>About Us</li>
             <li>Contact</li>
           </ul>
@@ -40,7 +40,7 @@ function Footer() {
               <br />
               London
               <br />
-              W1A 1AA
+              SE1 1AA
             </address>
           </div>
           <div className={styles.email}>info@floristhood.com</div>

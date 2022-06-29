@@ -6,6 +6,7 @@
   font-family: var(--sans-serif);
   color: var(--footer-text);
   line-height: 160%;
+  font-weight: 300;
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 

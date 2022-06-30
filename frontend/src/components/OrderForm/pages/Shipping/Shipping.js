@@ -29,49 +29,55 @@ function Shipping({ page, setPage }) {
         heading2="Shipping information"
       />
 
-      <form className={styles.formContainer}>
-        <input
-          type="text"
-          name="firstname"
-          placeholder="First name"
-          value={shippingValues["firstname"]}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="lastname"
-          placeholder="Last name"
-          value={shippingValues["lastname"]}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="address1"
-          placeholder="Address line 1"
-          value={shippingValues["address1"]}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="address2"
-          placeholder="Address line 2 (optional)"
-          value={shippingValues["address2"]}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="city"
-          placeholder="City"
-          value={shippingValues["city"]}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="Postcode"
-          placeholder="Postcode"
-          value={shippingValues["postcode"]}
-          onChange={handleChange}
-        />
+      <form>
+        <div className={styles.formContainer}>
+          <div className={styles.column}>
+            <input
+              type="text"
+              name="firstname"
+              placeholder="First name"
+              value={shippingValues["firstname"]}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Last name"
+              value={shippingValues["lastname"]}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="address1"
+              placeholder="Address line 1"
+              value={shippingValues["address1"]}
+              onChange={handleChange}
+            />
+          </div>
+          <div className={styles.column}>
+            <input
+              type="text"
+              name="address2"
+              placeholder="Address line 2 (optional)"
+              value={shippingValues["address2"]}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="city"
+              placeholder="City"
+              value={shippingValues["city"]}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="Postcode"
+              placeholder="Postcode"
+              value={shippingValues["postcode"]}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
       </form>
 
       <Navigation page={page} setPage={setPage} />

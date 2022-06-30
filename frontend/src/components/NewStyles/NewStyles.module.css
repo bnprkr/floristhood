@@ -24,3 +24,35 @@
 .thumbnail {
   width: 50%;
 }
+
+/* tall */
+/* .thumbnail {
+  max-width: var(--space-size-5);
+}
+
+.thumbnailContainer {
+  justify-content: center;
+  gap: 15%;
+}
+
+.container {
+  height: 100%;
+  padding: 4% 6%;
+} */
+
+/* column */
+/* .container {
+  height: 100%;
+  padding: 4% 6%;
+}
+
+.thumbnailContainer {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-size-10);
+}
+
+.thumbnail {
+  width: auto;
+  max-width: var(--space-size-3);
+} */

@@ -1,13 +1,26 @@
 .container {
   height: 45vh;
   display: flex;
+  flex-wrap: wrap;
+  gap: 8%;
   padding: 7%;
   background-color: var(--dark-grey);
   font-family: var(--sans-serif);
   color: var(--footer-text);
   line-height: 160%;
   font-weight: 300;
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+}
+
+.online {
+  min-width: 100%;
+  margin-top: -2%;
+}
+
+.logoCol {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -15,21 +28,8 @@
   font-size: clamp(3rem, 5vw, 4rem);
 }
 
-.left {
-  width: 25%;
-  color: var(--body-text);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.right {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  margin-left: 8%;
+.email {
+  padding: max(var(--space-size-14), 1.5%) 0;
 }
 
 address {
@@ -38,6 +38,44 @@ address {
 
 .social {
   display: flex;
-  gap: 6%;
+  gap: max(var(--space-size-14), 2%);
   font-size: clamp(1.8rem, 4.5vw, 3rem);
+}
+
+@media only screen and (max-width: 950px) {
+  /* mobile */
+  .container {
+    height: 100%;
+    padding: 3% 6%;
+    gap: 15%;
+  }
+
+  .column {
+    width: 35%;
+    padding: 2% 0;
+  }
+
+  .online {
+    margin-top: 0;
+    min-width: 40%;
+  }
+
+  .logoCol {
+    width: 100%;
+  }
+
+  .logo {
+    margin: var(--space-size-13) 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .column {
+    width: auto;
+    padding: 2% 0;
+  }
+
+  .logoCol {
+    width: 100%;
+  }
 }

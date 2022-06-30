@@ -8,4 +8,5 @@
 }
 
 .menuItem {
+  min-height: calc(3 * 50px);
 }

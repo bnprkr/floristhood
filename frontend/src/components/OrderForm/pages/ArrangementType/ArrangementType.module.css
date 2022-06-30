@@ -3,9 +3,12 @@
   padding: 3% 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 8%;
 }
 
 .thumbnail {
   width: 25%;
+  min-width: 120px;
+  margin: var(--space-size-15);
 }

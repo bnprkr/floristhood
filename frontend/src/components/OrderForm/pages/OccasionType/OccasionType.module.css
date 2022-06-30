@@ -3,5 +3,9 @@
   padding: 8% 1%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10%;
+}
+
+.menuItem {
 }

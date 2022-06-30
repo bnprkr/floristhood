@@ -26,8 +26,8 @@
   top: -5%;
   background-color: white;
   color: var(--light-pink);
-  height: var(--space-size-12);
-  width: var(--space-size-12);
+  height: 12%;
+  width: 12%;
   padding: 2px;
   border: 2px solid var(--light-pink);
   border-radius: 50%;

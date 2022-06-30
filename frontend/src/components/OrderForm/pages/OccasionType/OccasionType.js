@@ -13,8 +13,16 @@ function OccasionType({ page, setPage }) {
         heading2="Select your occasion and recipient"
       />
       <div className={styles.menuContainer}>
-        <Dropdown header="Occasion" items={occasions} />
-        <Dropdown header="Recipient" items={recipients} />
+        <Dropdown
+          header="Occasion"
+          items={occasions}
+          className={styles.menuItem}
+        />
+        <Dropdown
+          header="Recipient"
+          items={recipients}
+          className={styles.menuItem}
+        />
       </div>
       <Navigation page={page} setPage={setPage} />
     </>

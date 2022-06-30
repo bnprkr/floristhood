@@ -3,14 +3,16 @@
   padding: 5%;
   gap: 6%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .thumbnail {
-  height: 100%;
+  min-width: 180px;
 }
 
-.content {
-  width: 70%;
+.content,
+.thumbnail {
+  width: 40%;
 }
 
 .content > h1 {
@@ -19,12 +21,12 @@
 
 .content > h1,
 .content > p {
-  margin-bottom: min(3%, var(--space-size-14));
+  margin-bottom: 3%;
 }
 
 .order {
   display: flex;
-  gap: min(7%, var(--space-size-11));
+  gap: 7%;
 }
 
 .price {
@@ -43,4 +45,5 @@
   color: white;
   font-weight: 400;
   padding: 1.2% 4%;
+  min-width: 100px;
 }

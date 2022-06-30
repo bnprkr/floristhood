@@ -10,11 +10,13 @@ function Thumbnail({ imageName, text1, text2 }) {
           className={styles.image}
         />
       </div>
-      <span>
-        {text1}
-        <br />
-        {text2}
-      </span>
+      {(text1 || text2) && (
+        <span>
+          {text1}
+          <br />
+          {text2}
+        </span>
+      )}
     </div>
   );
 }

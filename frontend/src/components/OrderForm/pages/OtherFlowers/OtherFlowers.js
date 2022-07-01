@@ -7,15 +7,22 @@ import { thumbs } from "../../../../assets/images";
 
 function OtherFlowers({ page, setPage }) {
   const [oneSelected, toggleOneSelected] = useState(false);
+  const [thumbsArray, setThumbsArray] = useState([]);
 
-  // pick three random flowers
-  const indices = Array.from({ length: 9 }, (_, i) => i);
-  const thumbsSelected = [];
+  useEffect(() => {
+    const indices = Array.from({ length: 9 }, (_, i) => i);
+    const newThumbs = [];
 
-  for (let i = 0; i < 3; i++) {
-    const index = indices.splice(Math.floor(Math.random() * indices.length), 1);
-    thumbsSelected.push(thumbs[index]);
-  }
+    for (let i = 0; i < 3; i++) {
+      const index = indices.splice(
+        Math.floor(Math.random() * indices.length),
+        1
+      );
+      newThumbs.push(thumbs[index]);
+    }
+
+    setThumbsArray(newThumbs);
+  }, []);
 
   return (
     <>
@@ -30,7 +37,7 @@ function OtherFlowers({ page, setPage }) {
               <ThumbnailSelect
                 text1="Quisque pellentesque"
                 text2=""
-                imageName={thumbsSelected[i]}
+                imageName={thumbsArray[i]}
                 oneSelected={oneSelected}
                 toggleOneSelected={toggleOneSelected}
               />

@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import OrderForm from "./components/OrderForm/OrderForm";
 import MenuPage from "./components/Menu/MenuPage/MenuPage";
 import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
 import * as sessionActions from "./store/session";
 
 function App() {
@@ -22,27 +23,30 @@ function App() {
   }, [dispatch]);
 
   return (
-    <>
-      <Header open={open} setOpen={setOpen} />
-      <MenuPage open={open} setOpen={setOpen} />
-      <Switch>
-        <Route exact path="/">
-          <Welcome />
-          <Search />
-          <Featured />
-          <NewStyles />
-          <Footer />
-        </Route>
-        <Route exact path="/order">
-          <OrderForm />
-        </Route>
-        {isLoaded && (
+    isLoaded && (
+      <>
+        <Header open={open} setOpen={setOpen} />
+        <MenuPage open={open} setOpen={setOpen} />
+        <Switch>
+          <Route exact path="/">
+            <Welcome />
+            <Search />
+            <Featured />
+            <NewStyles />
+            <Footer />
+          </Route>
+          <Route exact path="/order">
+            <OrderForm />
+          </Route>
           <Route exact path="/login">
             <Login />
           </Route>
-        )}
-      </Switch>
-    </>
+          <Route exact path="/signup">
+            <Signup />
+          </Route>
+        </Switch>
+      </>
+    )
   );
 }
 

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import styles from "./UserButton.module.css";
+import LoginFormModal from "../../LoginFormModal/LoginFormModal";
 
 function UserButton({ user }) {
   const dispatch = useDispatch();
@@ -40,7 +41,8 @@ function UserButton({ user }) {
   ) : (
     <>
       <li>
-        <Link to="/login">Log In</Link>
+        {/* <Link to="/login">Log In</Link> */}
+        <LoginFormModal />
       </li>
       <li>
         <Link to="/signup">Sign Up</Link>

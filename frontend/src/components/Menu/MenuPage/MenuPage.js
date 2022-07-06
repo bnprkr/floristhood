@@ -1,11 +1,19 @@
 import styles from "./MenuPage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
+import { useOnClickOutside } from "../../hooks";
 
 function MenuPage({ open, setOpen }) {
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
+
   return (
     <>
-      <div className={`${styles.container} ${!open ? styles.closed : ""}`}>
+      <div
+        ref={node}
+        className={`${styles.container} ${!open ? styles.closed : ""}`}
+      >
         <div className={styles.closeIcon}>
           <FontAwesomeIcon icon={faXmark} onClick={() => setOpen(!open)} />
         </div>

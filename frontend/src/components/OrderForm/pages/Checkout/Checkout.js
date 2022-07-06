@@ -25,11 +25,11 @@ function Checkout({ page, setPage }) {
           </p>
           <div className={styles.order}>
             <div className={styles.price}>£55</div>
-            <button>Order now</button>
+            <button onClick={() => setPage(page + 1)}>Order now</button>
           </div>
         </div>
       </div>
-      <Navigation page={page} setPage={setPage} />
+      <Navigation page={page} setPage={setPage} last={true} />
     </>
   );
 }

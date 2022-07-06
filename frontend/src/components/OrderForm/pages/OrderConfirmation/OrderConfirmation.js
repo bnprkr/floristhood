@@ -22,7 +22,6 @@ function OrderConfirmation({ page, setPage }) {
           <a href="#">contact us.</a>
         </p>
       </div>
-      <Navigation page={page} setPage={setPage} />
     </>
   );
 }

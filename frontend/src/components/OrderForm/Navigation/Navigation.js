@@ -1,6 +1,6 @@
 import styles from "./Navigation.module.css";
 
-function Navigation({ page, setPage, first }) {
+function Navigation({ page, setPage, first, last }) {
   return (
     <div className={styles.container}>
       <div className={styles.back}>
@@ -17,14 +17,16 @@ function Navigation({ page, setPage, first }) {
         )}
       </div>
       <div className={styles.next}>
-        <button
-          onClick={() => {
-            setPage(page + 1);
-          }}
-          className={styles.nextButton}
-        >
-          Continue &gt;
-        </button>
+        {!last && (
+          <button
+            onClick={() => {
+              setPage(page + 1);
+            }}
+            className={styles.nextButton}
+          >
+            Continue &gt;
+          </button>
+        )}
       </div>
     </div>
   );

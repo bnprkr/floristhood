@@ -17,9 +17,8 @@ function OrderConfirmation({ page, setPage }) {
           confirmation email shortly.
         </p>
         <p className={styles.info}>
-          You can track the progress of your order in your{" "}
-          <a href="#">account</a>, and if you have any questions, please{" "}
-          <a href="#">contact us.</a>
+          You can track the progress of your order in your account, and if you
+          have any questions, please contact us.
         </p>
       </div>
     </>

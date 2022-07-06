@@ -5,24 +5,28 @@ import styles from "./OtherFlowers.module.css";
 import ThumbnailSelect from "../../../ThumbnailSelect/Thumbnail";
 import { thumbs } from "../../../../assets/images";
 
-function OtherFlowers({ page, setPage }) {
+function OtherFlowers({ page, setPage, primaryFlower }) {
   const [oneSelected, toggleOneSelected] = useState(false);
   const [thumbsArray, setThumbsArray] = useState([]);
 
   useEffect(() => {
     const indices = Array.from({ length: 9 }, (_, i) => i);
+    // get index of selected primary flower and remove from array
+    const primaryIndex = thumbs.indexOf(primaryFlower);
+    indices.splice(primaryIndex, 1);
     const newThumbs = [];
 
     for (let i = 0; i < 3; i++) {
-      const index = indices.splice(
-        Math.floor(Math.random() * indices.length),
-        1
-      );
+      let index;
+      if (i === 1) index = primaryIndex;
+      else {
+        index = indices.splice(Math.floor(Math.random() * indices.length), 1);
+      }
       newThumbs.push(thumbs[index]);
     }
 
     setThumbsArray(newThumbs);
-  }, []);
+  }, [primaryFlower]);
 
   return (
     <>
@@ -40,6 +44,8 @@ function OtherFlowers({ page, setPage }) {
                 imageName={thumbsArray[i]}
                 oneSelected={oneSelected}
                 toggleOneSelected={toggleOneSelected}
+                select={i === 1 ? true : false}
+                multiple={true}
               />
             </div>
           );

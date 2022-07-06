@@ -5,7 +5,7 @@ import styles from "./PrimaryFlower.module.css";
 import ThumbnailSelect from "../../../ThumbnailSelect/Thumbnail";
 import { thumbs } from "../../../../assets/images";
 
-function PrimaryFlower({ page, setPage }) {
+function PrimaryFlower({ page, setPage, setPrimaryFlower }) {
   const [oneSelected, toggleOneSelected] = useState(false);
 
   return (
@@ -24,6 +24,7 @@ function PrimaryFlower({ page, setPage }) {
                 imageName={thumbs[i]}
                 oneSelected={oneSelected}
                 toggleOneSelected={toggleOneSelected}
+                setState={setPrimaryFlower}
               />
             </div>
           );

@@ -9,8 +9,11 @@ function Thumbnail({
   text2,
   oneSelected,
   toggleOneSelected,
+  setState,
+  select,
+  multiple,
 }) {
-  const [selected, toggleSelected] = useState(false);
+  const [selected, toggleSelected] = useState(select ? true : false);
 
   return (
     <div className={styles.container}>
@@ -22,13 +25,15 @@ function Thumbnail({
           src={imageName}
           alt="Bouquet of flowers"
           className={styles.image}
-          onClick={() => {
+          onClick={(event) => {
             if (selected) {
               toggleSelected(false);
               toggleOneSelected(false);
-            } else if (!oneSelected) {
+              setState && setState("");
+            } else if (!oneSelected || multiple) {
               toggleSelected(true);
               toggleOneSelected(true);
+              setState && setState(event.target.getAttribute("src"));
             }
           }}
         />

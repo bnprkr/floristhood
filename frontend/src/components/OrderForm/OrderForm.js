@@ -12,6 +12,7 @@ import styles from "./OrderForm.module.css";
 
 function OrderForm() {
   const [page, setPage] = useState(1);
+  const [primaryFlower, setPrimaryFlower] = useState("none yet");
 
   return (
     <div className={styles.container}>
@@ -24,9 +25,21 @@ function OrderForm() {
           case 2:
             return <OccasionType page={page} setPage={setPage} />;
           case 3:
-            return <PrimaryFlower page={page} setPage={setPage} />;
+            return (
+              <PrimaryFlower
+                page={page}
+                setPage={setPage}
+                setPrimaryFlower={setPrimaryFlower}
+              />
+            );
           case 4:
-            return <OtherFlowers page={page} setPage={setPage} />;
+            return (
+              <OtherFlowers
+                page={page}
+                setPage={setPage}
+                primaryFlower={primaryFlower}
+              />
+            );
           case 5:
             return <Shipping page={page} setPage={setPage} />;
           case 6:

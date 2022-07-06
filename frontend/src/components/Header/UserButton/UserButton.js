@@ -8,7 +8,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import styles from "./UserButton.module.css";
 import LoginFormModal from "../../LoginFormModal/LoginFormModal";
 
-function UserButton({ user }) {
+function UserButton({ user, setShowModal }) {
   const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
 
@@ -41,8 +41,7 @@ function UserButton({ user }) {
   ) : (
     <>
       <li>
-        {/* <Link to="/login">Log In</Link> */}
-        <LoginFormModal />
+        <button onClick={() => setShowModal(true)}>Log In</button>
       </li>
       <li>
         <Link to="/signup">Sign Up</Link>

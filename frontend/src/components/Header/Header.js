@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faCartShopping } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +9,7 @@ import LoginFormModal from "../LoginFormModal/LoginFormModal";
 
 function Header({ open, setOpen }) {
   const sessionUser = useSelector((state) => state.session.user);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <header>
@@ -17,8 +19,8 @@ function Header({ open, setOpen }) {
         </div>
         <div className={styles.logo}>floristhood</div>
         <div className={styles.icons}>
-          <LoginFormModal />
-          <UserButton user={sessionUser} />
+          <LoginFormModal showModal={showModal} setShowModal={setShowModal} />
+          <UserButton user={sessionUser} setShowModal={setShowModal} />
           <FontAwesomeIcon icon={faCartShopping} />
         </div>
       </div>

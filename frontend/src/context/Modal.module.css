@@ -22,5 +22,7 @@
   position: absolute;
   background-color: white;
   border-radius: 40px;
-  width: 30%;
+  width: 50%;
+  min-width: var(--space-size-5);
+  max-width: var(--space-size-3);
 }

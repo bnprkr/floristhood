@@ -1,5 +1,5 @@
 .container {
-  padding: 6% 0;
+  padding: 6% 4%;
 }
 
 .formContainer {
@@ -19,12 +19,14 @@
   font-size: clamp(0.8rem, 2vw, 1.25rem);
   font-weight: 300;
   max-width: var(--space-size-4);
+  width: 95%;
 }
 
 .formButtons {
-  min-width: 75%;
+  width: 85%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2%;
   margin-top: 3%;
 }
 
@@ -33,12 +35,12 @@
   border: 2px solid var(--pastel-green-light);
   border-radius: 20px;
   padding: 3%;
-  width: 45%;
   font-family: var(--sans-serif-header);
   font-size: clamp(0.8rem, 2vw, 1.25rem);
   font-weight: 300;
   max-width: var(--space-size-6);
   cursor: pointer;
+  width: 100%;
 }
 
 .container > h1 {

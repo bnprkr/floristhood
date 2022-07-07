@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer";
 import OrderForm from "./components/OrderForm/OrderForm";
 import MenuPage from "./components/Menu/MenuPage/MenuPage";
 import Login from "./components/Login/Login";
-import Signup from "./components/Signup/Signup";
+import Register from "./components/Register/Register";
 import * as sessionActions from "./store/session";
 
 function App() {
@@ -41,8 +41,8 @@ function App() {
           <Route exact path="/login">
             <Login />
           </Route>
-          <Route exact path="/signup">
-            <Signup />
+          <Route exact path="/register">
+            <Register />
           </Route>
         </Switch>
       </>

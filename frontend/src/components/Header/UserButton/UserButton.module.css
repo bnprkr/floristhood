@@ -4,7 +4,6 @@
 
 .userMenu {
   position: absolute;
-  /* right: -100%; */
   color: var(--body-text);
   min-width: var(--space-size-6);
   margin-top: var(--space-size-15);

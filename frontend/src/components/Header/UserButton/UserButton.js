@@ -42,7 +42,7 @@ function UserButton({ user, setShowModal }) {
         Log In
       </li>
       <li>
-        <a className={styles.menuItem} href="/signup">
+        <a className={styles.menuItem} href="/register">
           Register
         </a>
       </li>

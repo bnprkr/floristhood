@@ -4,7 +4,7 @@
 
 .userMenu {
   position: absolute;
-  border: 1px solid red;
+  /* right: -100%; */
   color: var(--body-text);
   min-width: var(--space-size-6);
   margin-top: var(--space-size-15);
@@ -18,7 +18,8 @@
 .menuItem {
   display: block;
   font-family: var(--sans-serif-header);
-  font-size: clamp(1rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  color: var(--body-text);
   font-weight: 300;
   padding: 4% 0;
   border-bottom: 1px solid var(--pastel-green-light);
@@ -27,4 +28,16 @@
 
 .menuItem:last-of-type {
   border-bottom: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .userMenu {
+    right: -200%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .userMenu {
+    min-width: var(--space-size-7);
+  }
 }

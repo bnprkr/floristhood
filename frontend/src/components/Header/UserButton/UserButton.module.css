@@ -1,2 +1,30 @@
 .userDropdown {
+  position: relative;
+}
+
+.userMenu {
+  position: absolute;
+  border: 1px solid red;
+  color: var(--body-text);
+  min-width: var(--space-size-6);
+  margin-top: var(--space-size-15);
+  text-align: center;
+  border: 2px solid var(--pastel-green-light);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+}
+
+.menuItem {
+  display: block;
+  font-family: var(--sans-serif-header);
+  font-size: clamp(1rem, 2vw, 1rem);
+  font-weight: 300;
+  padding: 4% 0;
+  border-bottom: 1px solid var(--pastel-green-light);
+  cursor: pointer;
+}
+
+.menuItem:last-of-type {
+  border-bottom: none;
 }

@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import * as sessionActions from "../../../store/session";
-import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import styles from "./UserButton.module.css";
-import LoginFormModal from "../../LoginFormModal/LoginFormModal";
 
 function UserButton({ user, setShowModal }) {
   const dispatch = useDispatch();
@@ -35,24 +33,28 @@ function UserButton({ user, setShowModal }) {
   };
 
   const menuContent = user ? (
-    <li>
-      <button onClick={logout}>Log Out</button>
+    <li className={styles.menuItem} onClick={logout}>
+      Log Out
     </li>
   ) : (
     <>
-      <li>
-        <button onClick={() => setShowModal(true)}>Log In</button>
+      <li className={styles.menuItem} onClick={() => setShowModal(true)}>
+        Log In
       </li>
       <li>
-        <Link to="/signup">Sign Up</Link>
+        <a className={styles.menuItem} href="/signup">
+          Register
+        </a>
       </li>
     </>
   );
 
   return (
     <>
-      <FontAwesomeIcon icon={faUser} onClick={openMenu} />
-      {showMenu && <ul className={styles.userDropdown}>{menuContent}</ul>}
+      <div className={styles.userDropdown}>
+        <FontAwesomeIcon icon={faUser} onClick={openMenu} />
+        {showMenu && <ul className={styles.userMenu}>{menuContent}</ul>}
+      </div>
     </>
   );
 }

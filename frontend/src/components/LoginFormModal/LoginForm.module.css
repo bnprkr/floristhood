@@ -1,0 +1,46 @@
+.container {
+  padding: 6% 0;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer input {
+  display: block;
+  margin-bottom: 5%;
+  border: 2px solid var(--pastel-green-light);
+  border-radius: 20px;
+  padding: 3%;
+  font-family: var(--sans-serif-header);
+  font-size: clamp(0.8rem, 2vw, 1.25rem);
+  font-weight: 300;
+  max-width: var(--space-size-4);
+}
+
+.formButtons {
+  min-width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.demoLoginBtn,
+.loginBtn {
+  border: 2px solid var(--pastel-green-light);
+  border-radius: 20px;
+  padding: 3%;
+  width: 45%;
+  font-family: var(--sans-serif-header);
+  font-size: clamp(0.8rem, 2vw, 1.25rem);
+  font-weight: 300;
+  max-width: var(--space-size-6);
+  cursor: pointer;
+}
+
+.container > h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}

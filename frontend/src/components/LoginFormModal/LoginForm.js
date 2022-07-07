@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
+import styles from "./LoginForm.module.css";
 
 function LoginForm({ setShowModal }) {
   const dispatch = useDispatch();
@@ -20,32 +21,40 @@ function LoginForm({ setShowModal }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <ul>
-        {errors.map((error, idx) => (
-          <li key={idx}>{error}</li>
-        ))}
-      </ul>
-      <label>
-        Username or Email
-        <input
-          type="text"
-          value={credential}
-          onChange={(e) => setCredential(e.target.value)}
-          required
-        />
-      </label>
-      <label>
-        Password
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-      </label>
-      <button type="submit">Log In</button>
-    </form>
+    <div className={styles.container}>
+      <h1>Login</h1>
+      <form onSubmit={handleSubmit}>
+        <div className={styles.formContainer}>
+          <ul className={styles.errors}>
+            {errors.map((error, idx) => (
+              <li key={idx}>{error}</li>
+            ))}
+          </ul>
+          <input
+            type="text"
+            value={credential}
+            onChange={(e) => setCredential(e.target.value)}
+            required
+            placeholder="Username or Email"
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+            placeholder="Password"
+          />
+          <div className={styles.formButtons}>
+            <button className={styles.demoLoginBtn} type="button">
+              Demo Login
+            </button>
+            <button className={styles.loginBtn} type="submit">
+              Log In
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
   );
 }
 

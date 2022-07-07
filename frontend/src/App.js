@@ -10,7 +10,6 @@ import NewStyles from "./components/NewStyles/NewStyles";
 import Footer from "./components/Footer/Footer";
 import OrderForm from "./components/OrderForm/OrderForm";
 import MenuPage from "./components/Menu/MenuPage/MenuPage";
-import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import * as sessionActions from "./store/session";
 
@@ -37,9 +36,6 @@ function App() {
           </Route>
           <Route exact path="/order">
             <OrderForm />
-          </Route>
-          <Route exact path="/login">
-            <Login />
           </Route>
           <Route exact path="/register">
             <Register />

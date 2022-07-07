@@ -20,6 +20,20 @@ function LoginForm({ setShowModal }) {
       });
   };
 
+  const demoLogin = () => {
+    return dispatch(
+      sessionActions.login({
+        credential: "Demo-User",
+        password: "xLyHifk6JMV2",
+      })
+    )
+      .then(() => setShowModal(false))
+      .catch(async (res) => {
+        const data = await res.json();
+        if (data && data.errors) setErrors(data.errors);
+      });
+  };
+
   return (
     <div className={styles.container}>
       <h1>Login</h1>
@@ -45,7 +59,11 @@ function LoginForm({ setShowModal }) {
             placeholder="Password"
           />
           <div className={styles.formButtons}>
-            <button className={styles.demoLoginBtn} type="button">
+            <button
+              onClick={demoLogin}
+              className={styles.demoLoginBtn}
+              type="button"
+            >
               Demo Login
             </button>
             <button className={styles.loginBtn} type="submit">

@@ -10,7 +10,6 @@ function PrimaryFlower({ page, setPage, setPrimaryFlower }) {
   const [errors, setErrors] = useState([]);
 
   const onNext = (oneSelected, setErrors) => {
-    console.log("oneSelected:", oneSelected);
     if (!oneSelected) {
       setErrors(["At least one option must be selected"]);
       window.scrollTo(0, 0);

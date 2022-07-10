@@ -1,6 +1,6 @@
 .thumbsContainer {
   flex-grow: 1;
-  padding: 3% 0;
+  padding: 5% 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

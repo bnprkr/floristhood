@@ -13,6 +13,14 @@ import styles from "./OrderForm.module.css";
 function OrderForm() {
   const [page, setPage] = useState(1);
   const [primaryFlower, setPrimaryFlower] = useState("none yet");
+  const [shippingValues, setShippingValues] = useState({
+    firstname: "A",
+    lastname: "Person",
+    address1: "24 The Street",
+    address2: "",
+    city: "London",
+    postcode: "E1 1AA",
+  });
 
   return (
     <div className={styles.container}>
@@ -41,7 +49,14 @@ function OrderForm() {
               />
             );
           case 5:
-            return <Shipping page={page} setPage={setPage} />;
+            return (
+              <Shipping
+                page={page}
+                setPage={setPage}
+                shippingValues={shippingValues}
+                setShippingValues={setShippingValues}
+              />
+            );
           case 6:
             return <Checkout page={page} setPage={setPage} />;
           case 7:

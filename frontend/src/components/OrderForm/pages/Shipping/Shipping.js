@@ -1,26 +1,32 @@
 import Header from "../../Header/Header";
 import Navigation from "../../Navigation/Navigation";
 import styles from "./Shipping.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function Shipping({ page, setPage }) {
-  const [shippingValues, setShippingValues] = useState({
-    firstname: "A",
-    lastname: "Person",
-    address1: "24 The Street",
-    address2: "",
-    city: "London",
-    postcode: "E1 1AA",
-  });
+function Shipping({ page, setPage, shippingValues, setShippingValues }) {
+  const [errors, setErrors] = useState([]);
 
-  function handleChange(e) {
+  const onNext = (shippingValues) => {
+    if (
+      shippingValues.firstname === "" ||
+      shippingValues.lastname === "" ||
+      shippingValues.address1 === "" ||
+      shippingValues.city === "" ||
+      shippingValues.postcode === ""
+    ) {
+      setErrors(["Please complete all required fields"]);
+      window.scrollTo(0, 0);
+    } else return true;
+  };
+
+  const handleChange = (e) => {
     const name = e.target.getAttribute("name");
     setShippingValues((prevState) => {
       const nextState = { ...prevState };
       nextState[name] = e.target.value;
       return nextState;
     });
-  }
+  };
 
   return (
     <>
@@ -28,7 +34,11 @@ function Shipping({ page, setPage }) {
         heading1="Customise your flowers"
         heading2="Shipping information"
       />
-
+      <ul className={styles.errors}>
+        {errors.map((error, i) => (
+          <li key={i}>{error}</li>
+        ))}
+      </ul>
       <div className={styles.container}>
         <form>
           <div className={styles.formContainer}>
@@ -72,7 +82,7 @@ function Shipping({ page, setPage }) {
               />
               <input
                 type="text"
-                name="Postcode"
+                name="postcode"
                 placeholder="Postcode"
                 value={shippingValues["postcode"]}
                 onChange={handleChange}
@@ -82,7 +92,11 @@ function Shipping({ page, setPage }) {
         </form>
       </div>
 
-      <Navigation page={page} setPage={setPage} />
+      <Navigation
+        page={page}
+        setPage={setPage}
+        onNext={onNext.bind(null, shippingValues)}
+      />
     </>
   );
 }

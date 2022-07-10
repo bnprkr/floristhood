@@ -17,6 +17,10 @@ function PrimaryFlower({ page, setPage, setPrimaryFlower }) {
     } else return true;
   };
 
+  const setState = (add, ref) => {
+    if (add) setPrimaryFlower(ref);
+  };
+
   return (
     <>
       <Header
@@ -38,7 +42,7 @@ function PrimaryFlower({ page, setPage, setPrimaryFlower }) {
                 imageName={thumbs[i]}
                 oneSelected={oneSelected}
                 toggleOneSelected={toggleOneSelected}
-                setState={setPrimaryFlower}
+                setState={setState}
               />
             </div>
           );

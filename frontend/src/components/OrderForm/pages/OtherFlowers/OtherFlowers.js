@@ -8,6 +8,25 @@ import { thumbs } from "../../../../assets/images";
 function OtherFlowers({ page, setPage, primaryFlower }) {
   const [oneSelected, toggleOneSelected] = useState(false);
   const [thumbsArray, setThumbsArray] = useState([]);
+  const [selected, updateSelected] = useState([primaryFlower]);
+  const [errors, setErrors] = useState([]);
+
+  const onNext = () => {
+    console.log(selected);
+    if (selected.length < 1) {
+      setErrors(["At least one option must be selected"]);
+      window.scrollTo(0, 0);
+    } else return true;
+  };
+
+  const setState = (add, flower) => {
+    if (add) updateSelected(selected.concat(flower));
+    else {
+      const index = selected.indexOf(flower);
+      const newArr = selected.slice(0, index).concat(selected.slice(index + 1));
+      updateSelected(newArr);
+    }
+  };
 
   useEffect(() => {
     const indices = Array.from({ length: 9 }, (_, i) => i);
@@ -34,6 +53,11 @@ function OtherFlowers({ page, setPage, primaryFlower }) {
         heading1="Customise your flowers"
         heading2="Recommendations for flowers based on your primary flower"
       />
+      <ul className={styles.errors}>
+        {errors.map((error, i) => (
+          <li key={i}>{error}</li>
+        ))}
+      </ul>
       <div className={styles.thumbsContainer}>
         {Array.from({ length: 3 }, (_, i) => {
           return (
@@ -46,12 +70,13 @@ function OtherFlowers({ page, setPage, primaryFlower }) {
                 toggleOneSelected={toggleOneSelected}
                 select={i === 1 ? true : false}
                 multiple={true}
+                setState={setState}
               />
             </div>
           );
         })}
       </div>
-      <Navigation page={page} setPage={setPage} />
+      <Navigation page={page} setPage={setPage} onNext={onNext} />
     </>
   );
 }

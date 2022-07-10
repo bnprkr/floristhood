@@ -29,11 +29,11 @@ function Thumbnail({
             if (selected) {
               toggleSelected(false);
               toggleOneSelected(false);
-              setState && setState("");
+              setState && setState(false, event.target.getAttribute("src"));
             } else if (!oneSelected || multiple) {
               toggleSelected(true);
               toggleOneSelected(true);
-              setState && setState(event.target.getAttribute("src"));
+              setState && setState(true, event.target.getAttribute("src"));
             }
           }}
         />

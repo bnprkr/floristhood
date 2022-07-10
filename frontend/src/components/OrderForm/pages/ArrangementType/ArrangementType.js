@@ -7,6 +7,14 @@ import { useState } from "react";
 
 function ArrangementType({ page, setPage, first }) {
   const [oneSelected, toggleOneSelected] = useState(false);
+  const [errors, setErrors] = useState([]);
+
+  const onNext = (oneSelected, setErrors) => {
+    if (!oneSelected) {
+      setErrors(["An arrangement type must be selected"]);
+      window.scrollTo(0, 0);
+    } else return true;
+  };
 
   return (
     <>
@@ -14,6 +22,13 @@ function ArrangementType({ page, setPage, first }) {
         heading1="Customise your flowers"
         heading2="What kind of arrangement are you looking for?"
       />
+      {errors.length > 0 && (
+        <ul className={styles.errors}>
+          {errors.map((error, i) => (
+            <li key={i}>{error}</li>
+          ))}
+        </ul>
+      )}
       <div className={styles.thumbsContainer}>
         <div className={styles.thumbnail}>
           <ThumbnailSelect
@@ -43,7 +58,12 @@ function ArrangementType({ page, setPage, first }) {
           />
         </div>
       </div>
-      <Navigation first={first} page={page} setPage={setPage} />
+      <Navigation
+        first={first}
+        page={page}
+        setPage={setPage}
+        onNext={onNext.bind(null, oneSelected, setErrors)}
+      />
     </>
   );
 }

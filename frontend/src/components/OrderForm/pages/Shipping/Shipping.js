@@ -34,11 +34,13 @@ function Shipping({ page, setPage, shippingValues, setShippingValues }) {
         heading1="Customise your flowers"
         heading2="Shipping information"
       />
-      <ul className={styles.errors}>
-        {errors.map((error, i) => (
-          <li key={i}>{error}</li>
-        ))}
-      </ul>
+      {errors.length > 0 && (
+        <ul className={styles.errors}>
+          {errors.map((error, i) => (
+            <li key={i}>{error}</li>
+          ))}
+        </ul>
+      )}
       <div className={styles.container}>
         <form>
           <div className={styles.formContainer}>

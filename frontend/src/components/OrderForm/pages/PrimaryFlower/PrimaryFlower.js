@@ -26,11 +26,13 @@ function PrimaryFlower({ page, setPage, setPrimaryFlower }) {
         heading1="Customise your flowers"
         heading2="Choose your primary flower"
       />
-      <ul className={styles.errors}>
-        {errors.map((error, i) => (
-          <li key={i}>{error}</li>
-        ))}
-      </ul>
+      {errors.length > 0 && (
+        <ul className={styles.errors}>
+          {errors.map((error, i) => (
+            <li key={i}>{error}</li>
+          ))}
+        </ul>
+      )}
       <div className={styles.thumbsContainer}>
         {Array.from({ length: 9 }, (_, i) => {
           return (

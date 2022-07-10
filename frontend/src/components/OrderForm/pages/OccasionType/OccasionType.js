@@ -29,11 +29,13 @@ function OccasionType({
         heading1="Customise your flowers"
         heading2="Select your occasion and recipient"
       />
-      <ul className={styles.errors}>
-        {errors.map((error, i) => (
-          <li key={i}>{error}</li>
-        ))}
-      </ul>
+      {errors.length > 0 && (
+        <ul className={styles.errors}>
+          {errors.map((error, i) => (
+            <li key={i}>{error}</li>
+          ))}
+        </ul>
+      )}
       <div className={styles.menuContainer}>
         <div className={styles.menuItem}>
           <Dropdown

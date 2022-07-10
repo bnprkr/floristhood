@@ -56,11 +56,13 @@ function OtherFlowers({ page, setPage, primaryFlower }) {
         heading1="Customise your flowers"
         heading2="Recommendations for flowers based on your primary flower"
       />
-      <ul className={styles.errors}>
-        {errors.map((error, i) => (
-          <li key={i}>{error}</li>
-        ))}
-      </ul>
+      {errors.length > 0 && (
+        <ul className={styles.errors}>
+          {errors.map((error, i) => (
+            <li key={i}>{error}</li>
+          ))}
+        </ul>
+      )}
       <div className={styles.thumbsContainer}>
         {Array.from({ length: 3 }, (_, i) => {
           return (

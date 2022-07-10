@@ -4,7 +4,9 @@ import styles from "./Checkout.module.css";
 import { boxThumb, bouquetThumb, basketThumb } from "../../../../assets/images";
 import Thumbnail from "../../../Thumbnail/Thumbnail";
 
-function Checkout({ page, setPage }) {
+function Checkout({ page, setPage, shippingValues }) {
+  const { firstname, lastname, address1, address2, city, postcode } =
+    shippingValues;
   return (
     <>
       <Header heading1="Customise your flowers" heading2="Checkout" />
@@ -15,13 +17,15 @@ function Checkout({ page, setPage }) {
         <div className={styles.content}>
           <h1>DELIVERY INFO</h1>
           <p>
-            A Person
+            {`${firstname} ${lastname}`}
             <br />
-            24 The Street
+            {address1}
+            {address2 && <br />}
+            {address2}
             <br />
-            London
+            {city}
             <br />
-            E1 1AA
+            {postcode}
           </p>
           <div className={styles.order}>
             <div className={styles.price}>£55</div>

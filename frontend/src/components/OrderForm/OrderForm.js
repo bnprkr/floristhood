@@ -58,7 +58,13 @@ function OrderForm() {
               />
             );
           case 6:
-            return <Checkout page={page} setPage={setPage} />;
+            return (
+              <Checkout
+                page={page}
+                setPage={setPage}
+                shippingValues={shippingValues}
+              />
+            );
           case 7:
             return <OrderConfirmation page={page} setPage={setPage} />;
           default:

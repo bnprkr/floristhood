@@ -4,6 +4,7 @@ import Navigation from "../../Navigation/Navigation";
 import styles from "./OtherFlowers.module.css";
 import ThumbnailSelect from "../../../ThumbnailSelect/Thumbnail";
 import { thumbs } from "../../../../assets/images";
+import { prefix } from "@fortawesome/free-solid-svg-icons";
 
 function OtherFlowers({ page, setPage, primaryFlower }) {
   const [oneSelected, toggleOneSelected] = useState(false);
@@ -12,7 +13,6 @@ function OtherFlowers({ page, setPage, primaryFlower }) {
   const [errors, setErrors] = useState([]);
 
   const onNext = () => {
-    console.log(selected);
     if (selected.length < 1) {
       setErrors(["At least one option must be selected"]);
       window.scrollTo(0, 0);
@@ -20,11 +20,14 @@ function OtherFlowers({ page, setPage, primaryFlower }) {
   };
 
   const setState = (add, flower) => {
-    if (add) updateSelected(selected.concat(flower));
+    if (add) updateSelected((prevSelected) => prevSelected.concat(flower));
     else {
-      const index = selected.indexOf(flower);
-      const newArr = selected.slice(0, index).concat(selected.slice(index + 1));
-      updateSelected(newArr);
+      updateSelected((prevSelected) => {
+        const index = prevSelected.indexOf(flower);
+        return prevSelected
+          .slice(0, index)
+          .concat(prevSelected.slice(index + 1));
+      });
     }
   };
 

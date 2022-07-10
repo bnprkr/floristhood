@@ -1,6 +1,6 @@
 import styles from "./Navigation.module.css";
 
-function Navigation({ page, setPage, first, last }) {
+function Navigation({ page, setPage, first, last, onNext }) {
   return (
     <div className={styles.container}>
       <div className={styles.back}>
@@ -20,7 +20,7 @@ function Navigation({ page, setPage, first, last }) {
         {!last && (
           <button
             onClick={() => {
-              setPage(page + 1);
+              if (onNext()) setPage(page + 1);
             }}
             className={styles.nextButton}
           >
@@ -34,6 +34,7 @@ function Navigation({ page, setPage, first, last }) {
 
 Navigation.defaultProps = {
   first: false,
+  onNext: () => true,
 };
 
 export default Navigation;

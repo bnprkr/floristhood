@@ -21,6 +21,8 @@ function OrderForm() {
     city: "London",
     postcode: "E1 1AA",
   });
+  const [occasion, setOccasion] = useState();
+  const [recipient, setRecipient] = useState();
 
   return (
     <div className={styles.container}>
@@ -31,7 +33,16 @@ function OrderForm() {
               <ArrangementType page={page} setPage={setPage} first={true} />
             );
           case 2:
-            return <OccasionType page={page} setPage={setPage} />;
+            return (
+              <OccasionType
+                page={page}
+                setPage={setPage}
+                occasion={occasion}
+                setOccasion={setOccasion}
+                recipient={recipient}
+                setRecipient={setRecipient}
+              />
+            );
           case 3:
             return (
               <PrimaryFlower

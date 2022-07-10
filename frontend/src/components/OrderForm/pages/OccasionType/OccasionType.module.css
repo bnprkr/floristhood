@@ -10,3 +10,11 @@
 .menuItem {
   min-height: calc(3 * 50px);
 }
+
+.errors {
+  padding-top: 1%;
+  color: red;
+  font-family: var(--sans-serif-header);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 300;
+}

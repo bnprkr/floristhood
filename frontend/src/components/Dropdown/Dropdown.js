@@ -1,10 +1,10 @@
 import { useState, flushSync, useEffect } from "react";
 import styles from "./Dropdown.module.css";
 
-function Dropdown({ header, items }) {
+function Dropdown({ header, items, value, setValue }) {
   const [showMenu, toggleShowMenu] = useState(false);
   const [menuTitle, setMenuTitle] = useState(header);
-  const [value, setValue] = useState();
+  // const [value, setValue] = useState();
   const [itemsList, updateItemsList] = useState(
     items.map((item, i) => {
       return { index: i, value: item, selected: false };

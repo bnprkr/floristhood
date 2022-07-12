@@ -1,4 +1,5 @@
 import styles from "./Thumbnail.module.css";
+import { Link } from "react-router-dom";
 
 function Thumbnail(props) {
   return (
@@ -15,7 +16,9 @@ function Thumbnail(props) {
           </p>
         </div>
         <div className={styles.button}>
-          <button>See all</button>
+          <Link to="/order">
+            <button>See all</button>
+          </Link>
         </div>
       </div>
     </div>

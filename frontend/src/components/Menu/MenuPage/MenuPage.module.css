@@ -40,6 +40,14 @@
   font-size: clamp(1rem, 3.5vw, 2.8rem);
 }
 
+/* apply link styles to other menu items not links currently */
+.menuItem {
+  color: var(--pastel-green);
+  font-weight: 400;
+  font-family: var(--sans-serif-header);
+  font-size: clamp(1rem, 3.5vw, 2.8rem);
+}
+
 .logo {
   font-family: var(--logo);
   font-size: clamp(1.5rem, 5vw, 3rem);

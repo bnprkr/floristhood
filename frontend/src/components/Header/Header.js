@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faCartShopping } from "@fortawesome/free-solid-svg-icons";
@@ -17,7 +18,9 @@ function Header({ open, setOpen }) {
         <div className={styles.menu}>
           <FontAwesomeIcon icon={faBars} onClick={() => setOpen(!open)} />
         </div>
-        <div className={styles.logo}>floristhood</div>
+        <Link to="/" className={styles.logo}>
+          floristhood
+        </Link>
         <div className={styles.icons}>
           <LoginFormModal showModal={showModal} setShowModal={setShowModal} />
           <UserButton user={sessionUser} setShowModal={setShowModal} />

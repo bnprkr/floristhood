@@ -23,6 +23,10 @@ header {
   font-size: clamp(1.2rem, 5.5vw, 2.5rem);
 }
 
+.menu {
+  cursor: pointer;
+}
+
 .icons {
   display: flex;
   gap: 25%;

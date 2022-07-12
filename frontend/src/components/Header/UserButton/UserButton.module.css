@@ -1,5 +1,6 @@
 .userDropdown {
   position: relative;
+  cursor: pointer;
 }
 
 .userMenu {

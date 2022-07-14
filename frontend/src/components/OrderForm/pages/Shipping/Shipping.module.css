@@ -21,6 +21,7 @@
   font-size: clamp(0.8rem, 2vw, 1.25rem);
   font-weight: 300;
   min-height: var(--space-size-10);
+  width: 100%;
 }
 
 .errors {

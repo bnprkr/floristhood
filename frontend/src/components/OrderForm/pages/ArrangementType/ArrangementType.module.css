@@ -9,7 +9,7 @@
 
 .thumbnail {
   width: 25%;
-  min-width: 120px;
+  min-width: 200px;
   margin: var(--space-size-15);
 }
 

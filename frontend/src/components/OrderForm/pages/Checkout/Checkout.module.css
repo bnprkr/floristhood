@@ -1,7 +1,7 @@
 .container {
   flex-grow: 1;
-  padding: 5%;
-  gap: 6%;
+  padding: 6% 0;
+  gap: max(25px, 8%);
   display: flex;
   flex-wrap: wrap;
 }
@@ -10,9 +10,10 @@
   min-width: 180px;
 }
 
-.content,
-.thumbnail {
-  width: 40%;
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: max(10px, 2%);
 }
 
 .content > h1 {
@@ -24,19 +25,14 @@
   margin-bottom: 3%;
 }
 
-.order {
-  display: flex;
-  gap: 7%;
-}
-
 .price {
   font-weight: 500;
   font-family: var(--sans-serif-header);
   font-size: clamp(1.5rem, 3.5vw, 2.5rem);
 }
 
-.order > button {
-  align-self: center;
+.content > button {
+  display: inline-block;
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-family: var(--sans-serif-header);
   background-color: var(--dark-pink);
@@ -44,7 +40,7 @@
   border: none;
   color: white;
   font-weight: 400;
-  padding: 1.2% 4%;
-  min-width: 100px;
+  padding: 2% 4%;
+  max-width: 150px;
   cursor: pointer;
 }

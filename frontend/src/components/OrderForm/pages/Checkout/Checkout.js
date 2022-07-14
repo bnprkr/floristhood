@@ -27,10 +27,8 @@ function Checkout({ page, setPage, shippingValues }) {
             <br />
             {postcode}
           </p>
-          <div className={styles.order}>
-            <div className={styles.price}>£55</div>
-            <button onClick={() => setPage(page + 1)}>Order now</button>
-          </div>
+          <div className={styles.price}>£55</div>
+          <button onClick={() => setPage(page + 1)}>Order now</button>
         </div>
       </div>
       <Navigation page={page} setPage={setPage} last={true} />

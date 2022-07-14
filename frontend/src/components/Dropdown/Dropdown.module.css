@@ -20,18 +20,30 @@
 
 .container li:first-of-type {
   border-top: 2px solid var(--pastel-green-light);
-  border-top-left-radius: max(15px, 2vw);
-  border-top-right-radius: max(15px, 2vw);
+  border-top-left-radius: min(15px, 2vw);
+  border-top-right-radius: min(15px, 2vw);
 }
 
 .container li:last-of-type {
-  border-bottom-left-radius: max(15px, 2vw);
-  border-bottom-right-radius: max(15px, 2vw);
+  border-bottom-left-radius: min(15px, 2vw);
+  border-bottom-right-radius: min(15px, 2vw);
   border-bottom: 2px solid var(--pastel-green-light);
 }
 
 @media only screen and (min-width: 750px) {
   .container {
     width: var(--space-size-5);
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .container li:first-of-type {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .container li:last-of-type {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 }

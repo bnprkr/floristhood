@@ -1,14 +1,17 @@
 .container {
-  height: 70vh;
+  height: auto;
+  min-height: var(--space-size-3);
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 0 6%;
+  padding: 10% 6%;
   background-color: var(--dark-pink);
   color: white;
 }
 
-.container > h1 {
+.content > h1 {
   color: white;
-  padding: max(5%, var(--space-size-10)) 0;
+  padding: 0 0 5% 0;
 }
 
 .thumbnailContainer {
@@ -33,16 +36,13 @@
     padding: 0;
   }
 
-  .container > h1 {
+  .content > h1 {
     color: white;
-    padding: max(5%, var(--space-size-10)) 6%;
+    padding: 1% 0 5% 6%;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   }
 
   .thumbnail {
     flex: none;
-  }
-
-  .container > h1 {
-    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   }
 }

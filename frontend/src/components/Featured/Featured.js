@@ -12,32 +12,34 @@ import { Link } from "react-router-dom";
 function Featured() {
   return (
     <div className={styles.container}>
-      <h1>Featured Arrangements</h1>
-      <div className={styles.thumbnailContainer}>
-        <div className={styles.thumbnail}>
-          <Link to="/order">
-            <Thumbnail imageName={featuredThumb1} />
-          </Link>
-        </div>
-        <div className={styles.thumbnail}>
-          <Link to="/order">
-            <Thumbnail imageName={featuredThumb2} />
-          </Link>
-        </div>
-        <div className={styles.thumbnail}>
-          <Link to="/order">
-            <Thumbnail imageName={featuredThumb3} />
-          </Link>
-        </div>
-        <div className={styles.thumbnail}>
-          <Link to="/order">
-            <Thumbnail imageName={featuredThumb4} />
-          </Link>
-        </div>
-        <div className={styles.thumbnail}>
-          <Link to="/order">
-            <Thumbnail imageName={featuredThumb5} />
-          </Link>
+      <div className={styles.content}>
+        <h1>Featured Arrangements</h1>
+        <div className={styles.thumbnailContainer}>
+          <div className={styles.thumbnail}>
+            <Link to="/order">
+              <Thumbnail imageName={featuredThumb1} />
+            </Link>
+          </div>
+          <div className={styles.thumbnail}>
+            <Link to="/order">
+              <Thumbnail imageName={featuredThumb2} />
+            </Link>
+          </div>
+          <div className={styles.thumbnail}>
+            <Link to="/order">
+              <Thumbnail imageName={featuredThumb3} />
+            </Link>
+          </div>
+          <div className={styles.thumbnail}>
+            <Link to="/order">
+              <Thumbnail imageName={featuredThumb4} />
+            </Link>
+          </div>
+          <div className={styles.thumbnail}>
+            <Link to="/order">
+              <Thumbnail imageName={featuredThumb5} />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

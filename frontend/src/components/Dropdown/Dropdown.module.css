@@ -30,9 +30,9 @@
   border-bottom: 2px solid var(--pastel-green-light);
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 340px) {
   .container {
-    width: var(--space-size-5);
+    width: var(--space-size-4-half);
   }
 }
 

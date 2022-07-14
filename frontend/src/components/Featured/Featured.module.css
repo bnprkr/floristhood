@@ -19,9 +19,23 @@
   margin-bottom: auto;
 }
 
-@media only screen and (max-width: 991px) {
+/* allow overflow for tablets and smaller */
+@media only screen and (max-width: 1023px) {
   .thumbnailContainer {
     overflow-x: scroll;
+    padding: 0% 6%;
+    padding-bottom: 3%;
+  }
+
+  /* when overflow, allow thumbnails container to go to edge of screen
+  move padding to heading only.. */
+  .container {
+    padding: 0;
+  }
+
+  .container > h1 {
+    color: white;
+    padding: max(5%, var(--space-size-10)) 6%;
   }
 
   .thumbnail {

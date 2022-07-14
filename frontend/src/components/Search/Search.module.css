@@ -18,7 +18,7 @@
   display: flex;
   justify-content: flex-end;
   min-width: var(--space-size-5);
-  max-width: var(--space-size-4);
+  max-width: 100%;
   width: 100%;
   border: 3px solid var(--pastel-green-light);
   border-radius: 40px;
@@ -27,17 +27,28 @@
   background-color: white;
 }
 
+.search > input {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--body-text);
+  font-family: var(--sans-serif-header);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 300;
+  padding: 0 2%;
+}
+
+.search > button {
+  border: none;
+  background: none;
+}
+
 .hide {
   display: none;
 }
 
-.search {
-  max-width: 100%;
-}
-
 .magnifyingGlass {
   margin-right: 1%;
-  font-size: var(--font-size-6);
   font-size: clamp(1.4rem, 3.5vw, 2rem);
   color: var(--pastel-green-light);
 }

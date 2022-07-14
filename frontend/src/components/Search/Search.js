@@ -1,48 +1,32 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faXmark } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Search.module.css";
-import { useState, useRef } from "react";
-import { useOnClickOutside } from "../hooks";
-
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
-}
+import { useHistory } from "react-router-dom";
 
 function Search() {
-  const [open, setOpen] = useState(false);
+  const history = useHistory();
 
-  const node = useRef();
-  useOnClickOutside(node, () => setOpen(false));
+  const onSubmit = (e) => {
+    e.preventDefault();
+    history.push("/order");
+  };
 
   return (
     <div className={styles.container}>
-      <p className={open ? styles.hide : ""}>
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
         tincidunt quis tortor at dignissim. Donec porttitor, lectus sit amet
         efficitur hendrerit, libero dui rhoncus.
       </p>
-      <button
-        ref={node}
-        className={styles.search}
-        onClick={!open ? () => setOpen(!open) : ""}
-      >
-        {open ? (
-          <FontAwesomeIcon
-            icon={faXmark}
-            className={styles.close}
-            onClick={() => setOpen(!open)}
-          />
-        ) : (
+      <form className={styles.search} onSubmit={onSubmit}>
+        <input></input>
+        <button>
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
             className={styles.magnifyingGlass}
           />
-        )}
-      </button>
+        </button>
+      </form>
     </div>
   );
 }

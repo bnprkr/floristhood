@@ -1,11 +1,12 @@
 .container {
+  height: 100%;
   flex-grow: 1;
 }
 
 .formContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 5%;
   margin-top: 5%;
 }
@@ -14,7 +15,7 @@
   display: block;
   margin-bottom: 5%;
   border: 2px solid var(--pastel-green-light);
-  border-radius: 20px;
+  border-radius: max(15px, 2vw);
   padding: 3%;
   font-family: var(--sans-serif-header);
   font-size: clamp(0.8rem, 2vw, 1.25rem);

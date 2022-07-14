@@ -83,6 +83,7 @@ ul {
   --font-size-11: 12px;
 
   /* spacing sizes */
+  --thumb-min-size: 200px;
   --space-size-layout: 1400px;
   --space-size-1: 768px;
   --space-size-2: 640px;

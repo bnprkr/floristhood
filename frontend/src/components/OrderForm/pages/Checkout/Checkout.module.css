@@ -36,11 +36,17 @@
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-family: var(--sans-serif-header);
   background-color: var(--dark-pink);
-  border-radius: 40px;
+  border-radius: min(25px, 2vw);
   border: none;
   color: white;
   font-weight: 400;
   padding: 2% 4%;
   max-width: 150px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 585px) {
+  .content > button {
+    border-radius: 15px;
+  }
 }

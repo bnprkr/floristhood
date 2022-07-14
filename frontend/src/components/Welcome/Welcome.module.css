@@ -48,7 +48,7 @@
 .welcomeMessage > .button {
   align-self: flex-start;
   background-color: var(--dark-pink);
-  border-radius: 40px;
+  border-radius: min(25px, 2vw);
   border: none;
   color: white;
   font-weight: 400;
@@ -74,5 +74,11 @@
 
   .welcomeMessage > h1 {
     font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .welcomeMessage > .button {
+    border-radius: 15px;
   }
 }

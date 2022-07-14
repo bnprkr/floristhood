@@ -20,13 +20,13 @@
 
 .container li:first-of-type {
   border-top: 2px solid var(--pastel-green-light);
-  border-top-left-radius: min(15px, 2vw);
-  border-top-right-radius: min(15px, 2vw);
+  border-top-left-radius: min(20px, 2vw);
+  border-top-right-radius: min(20px, 2vw);
 }
 
 .container li:last-of-type {
-  border-bottom-left-radius: min(15px, 2vw);
-  border-bottom-right-radius: min(15px, 2vw);
+  border-bottom-left-radius: min(20px, 2vw);
+  border-bottom-right-radius: min(20px, 2vw);
   border-bottom: 2px solid var(--pastel-green-light);
 }
 

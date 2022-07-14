@@ -15,7 +15,7 @@
   display: block;
   margin-bottom: 5%;
   border: 2px solid var(--pastel-green-light);
-  border-radius: min(15px, 2vw);
+  border-radius: min(20px, 2vw);
   padding: 3%;
   font-family: var(--sans-serif-header);
   font-size: clamp(0.8rem, 2vw, 1.25rem);

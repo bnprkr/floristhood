@@ -38,6 +38,7 @@
 .magnifyingGlass {
   margin-right: 1%;
   font-size: var(--font-size-6);
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
   color: var(--pastel-green-light);
 }
 
@@ -54,5 +55,12 @@
 
   .container {
     height: 30vh;
+  }
+}
+
+/* phones */
+@media only screen and (max-width: 479px) {
+  .container {
+    max-height: var(--space-size-7);
   }
 }

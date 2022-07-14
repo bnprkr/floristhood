@@ -13,7 +13,7 @@
 }
 
 .container > h2 {
-  margin-top: 1%;
-  font-size: clamp(1rem, 3.5vw, 2.5rem);
+  margin-top: 2%;
+  font-size: clamp(1.6rem, 3.5vw, 2.8rem);
   font-weight: 400;
 }

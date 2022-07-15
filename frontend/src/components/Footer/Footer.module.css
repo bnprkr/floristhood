@@ -1,10 +1,16 @@
 .container {
-  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7%;
+  background-color: var(--dark-grey);
+}
+
+.content {
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 8%;
-  padding: 7%;
-  background-color: var(--dark-grey);
   font-family: var(--sans-serif);
   color: var(--footer-text);
   line-height: 160%;
@@ -44,7 +50,7 @@ address {
 
 @media only screen and (max-width: 950px) {
   /* mobile */
-  .container {
+  .content {
     height: 100%;
     padding: 3% 6%;
     gap: 15%;

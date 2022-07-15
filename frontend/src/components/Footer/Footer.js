@@ -8,44 +8,46 @@ import {
 function Footer() {
   return (
     <div className={styles.container}>
-      <div className={`${styles.column} ${styles.logoCol}`}>
-        <div className={styles.logo}>floristhood</div>
-      </div>
-      <div className={styles.column}>
-        <ul>
-          <li>Terms & Conditions</li>
-          <li>Delivery Details</li>
-          <li>Accessibility</li>
-          <li>Privacy Policy</li>
-        </ul>
-      </div>
-      <div className={styles.column}>
-        <ul>
-          <li>Cookie Policy</li>
-          <li>About Us</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div className={styles.column}>
-        <div className={styles.address}>
-          <address>
-            29 Lorem ipsum dolor
-            <br />
-            Consectetur
-            <br />
-            London
-            <br />
-            SE1 1AA
-          </address>
+      <div className={styles.content}>
+        <div className={`${styles.column} ${styles.logoCol}`}>
+          <div className={styles.logo}>floristhood</div>
         </div>
-      </div>
-      <div className={`${styles.column} ${styles.online}`}>
-        <div className={styles.online}>
-          <div className={styles.social}>
-            <FontAwesomeIcon icon={faFacebook} />
-            <FontAwesomeIcon icon={faInstagramSquare} />
+        <div className={styles.column}>
+          <ul>
+            <li>Terms & Conditions</li>
+            <li>Delivery Details</li>
+            <li>Accessibility</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div className={styles.column}>
+          <ul>
+            <li>Cookie Policy</li>
+            <li>About Us</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div className={styles.column}>
+          <div className={styles.address}>
+            <address>
+              29 Lorem ipsum dolor
+              <br />
+              Consectetur
+              <br />
+              London
+              <br />
+              SE1 1AA
+            </address>
           </div>
-          <div className={styles.email}>info@floristhood.com</div>
+        </div>
+        <div className={`${styles.column} ${styles.online}`}>
+          <div className={styles.online}>
+            <div className={styles.social}>
+              <FontAwesomeIcon icon={faFacebook} />
+              <FontAwesomeIcon icon={faInstagramSquare} />
+            </div>
+            <div className={styles.email}>info@floristhood.com</div>
+          </div>
         </div>
       </div>
     </div>

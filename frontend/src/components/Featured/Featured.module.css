@@ -27,17 +27,18 @@
   margin-bottom: auto;
 }
 
-/* allow overflow for tablets and smaller */
-@media only screen and (max-width: 1023px) {
+/* allow overflow for smaller screens */
+@media only screen and (max-width: 1299px) {
   .thumbnailContainer {
     overflow-x: scroll;
-    padding: 0% 6%;
+    padding: 0 6%;
+    padding-bottom: var(--space-size-12);
   }
 
   /* when overflow, allow thumbnails container to go to edge of screen
   move padding to heading only.. */
   .content {
-    padding: 10% 0;
+    padding: 8% 0;
   }
 
   .content > h1 {

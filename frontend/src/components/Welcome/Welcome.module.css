@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5%;
+  gap: max(5%, var(--space-size-13));
   padding: 0 4%;
   width: 100%;
 }
@@ -64,9 +64,19 @@
     height: auto;
     object-fit: contain;
   }
+
+  .welcomeMessage {
+    height: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
 }
 
 @media only screen and (max-width: 479px) {
+  .content {
+    flex-direction: column;
+  }
+
   .welcomeImage {
     max-height: 50vh;
     width: 100%;
@@ -74,13 +84,8 @@
   }
 
   .welcomeMessage {
-    flex-grow: 1;
-  }
-
-  .content {
-    flex-direction: column;
-    height: 85vh;
-    /* height: 100%; */
+    height: 100%;
+    gap: var(--space-size-13);
   }
 
   .welcomeMessage > h1 {

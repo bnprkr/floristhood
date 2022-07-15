@@ -27,7 +27,7 @@ function App() {
         <Header open={open} setOpen={setOpen} />
         <MenuPage open={open} setOpen={setOpen} />
         <Switch>
-          <Route exact path="/">
+          <Route path="/">
             <Welcome />
             <Search />
             <Featured />

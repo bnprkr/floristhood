@@ -1,8 +1,9 @@
 .container {
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 4% 6%;
+  align-items: flex-start;
+  padding: 6%;
 }
 
 .formContainer {
@@ -16,11 +17,12 @@
   display: block;
   margin-bottom: 5%;
   border: 2px solid var(--pastel-green-light);
-  border-radius: 20px;
+  border-radius: min(20px, 2vw);
   padding: 3%;
   font-family: var(--sans-serif-header);
-  font-size: clamp(0.8rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 300;
+  min-height: var(--space-size-9);
   flex-grow: 1;
 }
 
@@ -31,10 +33,10 @@
 
 .registerBtn > button {
   border: 2px solid var(--pastel-green-light);
-  border-radius: 20px;
-  padding: 2% 8%;
+  border-radius: min(20px, 2vw);
+  padding: 2% 10%;
   font-family: var(--sans-serif-header);
-  font-size: clamp(0.8rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 300;
   cursor: pointer;
   margin-top: 2%;
@@ -42,6 +44,8 @@
 
 .container > h1 {
   align-self: flex-start;
+  font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+  font-weight: 400;
 }
 
 .errors {
@@ -52,11 +56,24 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .container {
+  /* .container {
     padding: 4% 3%;
-  }
+  } */
 
   .formContainer input {
     width: var(--space-size-5);
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .formContainer input,
+  .registerBtn > button {
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 409px) {
+  .formContainer input {
+    min-width: var(--space-size-4-half);
   }
 }

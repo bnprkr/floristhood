@@ -1,4 +1,8 @@
-.container {
+/* note .container is outermost element if needed */
+
+.content {
+  max-width: var(--space-size-layout);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +65,7 @@
   }
 
   /* move padding to allow thumbnails to go to edge with internal padding */
-  .container {
+  .content {
     padding: 10% 0;
   }
 

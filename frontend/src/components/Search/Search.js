@@ -13,20 +13,22 @@ function Search() {
 
   return (
     <div className={styles.container}>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-        tincidunt quis tortor at dignissim. Donec porttitor, lectus sit amet
-        efficitur hendrerit, libero dui rhoncus.
-      </p>
-      <form className={styles.search} onSubmit={onSubmit}>
-        <input placeholder="Search..." disabled></input>
-        <button>
-          <FontAwesomeIcon
-            icon={faMagnifyingGlass}
-            className={styles.magnifyingGlass}
-          />
-        </button>
-      </form>
+      <div className={styles.content}>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          tincidunt quis tortor at dignissim. Donec porttitor, lectus sit amet
+          efficitur hendrerit, libero dui rhoncus.
+        </p>
+        <form className={styles.search} onSubmit={onSubmit}>
+          <input placeholder="Search..." disabled></input>
+          <button>
+            <FontAwesomeIcon
+              icon={faMagnifyingGlass}
+              className={styles.magnifyingGlass}
+            />
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

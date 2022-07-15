@@ -1,4 +1,8 @@
-.container {
+/* note .container is outermost element if needed */
+
+.content {
+  max-width: var(--space-size-layout);
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +11,7 @@
   height: 45vh;
 }
 
-.container > p {
+.content > p {
   max-width: var(--space-size-2);
   width: 100%;
   color: var(--body-text);
@@ -60,18 +64,18 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .container > p {
+  .content > p {
     display: none;
   }
 
-  .container {
+  .content {
     height: 30vh;
   }
 }
 
 /* phones */
 @media only screen and (max-width: 479px) {
-  .container {
+  .content {
     max-height: var(--space-size-7);
   }
 }

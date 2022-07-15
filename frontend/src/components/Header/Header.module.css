@@ -1,9 +1,11 @@
 header {
-  padding: 0 6%;
   background-color: var(--pastel-green);
 }
 
 .container {
+  max-width: var(--space-size-layout);
+  margin: 0 auto;
+  padding: 0 6%;
   display: flex;
   justify-content: space-between;
   align-items: center;

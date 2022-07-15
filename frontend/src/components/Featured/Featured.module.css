@@ -1,11 +1,16 @@
 .container {
+  background-color: var(--dark-pink);
+}
+
+.content {
+  max-width: var(--space-size-layout);
+  margin: 0 auto;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 10% 6%;
-  background-color: var(--dark-pink);
+  padding: 8% 6%;
   color: white;
 }
 
@@ -27,12 +32,11 @@
   .thumbnailContainer {
     overflow-x: scroll;
     padding: 0% 6%;
-    padding-bottom: 3%;
   }
 
   /* when overflow, allow thumbnails container to go to edge of screen
   move padding to heading only.. */
-  .container {
+  .content {
     padding: 10% 0;
   }
 

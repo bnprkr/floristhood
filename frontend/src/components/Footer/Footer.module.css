@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 7%;
   background-color: var(--dark-grey);
 }
 
 .content {
+  max-width: var(--space-size-layout);
+  margin: 0 auto;
+  width: 100%;
+  padding: 8% 6%;
   height: auto;
   display: flex;
   flex-wrap: wrap;

@@ -19,7 +19,7 @@ function Search() {
         efficitur hendrerit, libero dui rhoncus.
       </p>
       <form className={styles.search} onSubmit={onSubmit}>
-        <input placeholder="Search..."></input>
+        <input placeholder="Search..." disabled></input>
         <button>
           <FontAwesomeIcon
             icon={faMagnifyingGlass}

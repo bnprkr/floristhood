@@ -13,7 +13,7 @@
   display: block;
   margin-bottom: 5%;
   border: 2px solid var(--pastel-green-light);
-  border-radius: 20px;
+  border-radius: min(20px, 2vw);
   padding: 3%;
   font-family: var(--sans-serif-header);
   font-size: clamp(0.8rem, 2vw, 1.25rem);
@@ -33,7 +33,7 @@
 .demoLoginBtn,
 .loginBtn {
   border: 2px solid var(--pastel-green-light);
-  border-radius: 20px;
+  border-radius: min(20px, 2vw);
   padding: 3%;
   font-family: var(--sans-serif-header);
   font-size: clamp(0.8rem, 2vw, 1.25rem);
@@ -46,4 +46,12 @@
 .container > h1 {
   text-align: center;
   margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 585px) {
+  .formContainer input,
+  .demoLoginBtn,
+  .loginBtn {
+    border-radius: 15px;
+  }
 }

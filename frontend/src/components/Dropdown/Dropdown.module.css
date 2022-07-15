@@ -5,7 +5,7 @@
 .container {
   width: 30%;
   min-width: var(--space-size-6);
-  min-height: 180px;
+  min-height: 170px;
   color: var(--body-text);
   font-family: var(--sans-serif-header);
   font-size: clamp(1rem, 2vw, 1.25rem);

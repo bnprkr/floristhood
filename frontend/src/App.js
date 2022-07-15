@@ -27,18 +27,18 @@ function App() {
         <Header open={open} setOpen={setOpen} />
         <MenuPage open={open} setOpen={setOpen} />
         <Switch>
-          <Route path="/">
-            <Welcome />
-            <Search />
-            <Featured />
-            <NewStyles />
-            <Footer />
-          </Route>
           <Route exact path="/order">
             <OrderForm />
           </Route>
           <Route exact path="/register">
             <Register />
+          </Route>
+          <Route>
+            <Welcome />
+            <Search />
+            <Featured />
+            <NewStyles />
+            <Footer />
           </Route>
         </Switch>
       </>

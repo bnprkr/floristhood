@@ -5,7 +5,7 @@ import ThumbnailSelect from "../../../ThumbnailSelect/Thumbnail";
 import { boxThumb, bouquetThumb, basketThumb } from "../../../../assets/images";
 import { useState } from "react";
 
-function ArrangementType({ page, setPage, first }) {
+function ArrangementType({ page, setPage, first, setArrangementType }) {
   const [oneSelected, toggleOneSelected] = useState(false);
   const [errors, setErrors] = useState([]);
 
@@ -14,6 +14,10 @@ function ArrangementType({ page, setPage, first }) {
       setErrors(["An arrangement type must be selected"]);
       window.scrollTo(0, 0);
     } else return true;
+  };
+
+  const setState = (add, ref) => {
+    if (add) setArrangementType(ref);
   };
 
   return (
@@ -37,6 +41,7 @@ function ArrangementType({ page, setPage, first }) {
             imageName={boxThumb}
             oneSelected={oneSelected}
             toggleOneSelected={toggleOneSelected}
+            setState={setState}
           />
         </div>
         <div className={styles.thumbnail}>
@@ -46,6 +51,7 @@ function ArrangementType({ page, setPage, first }) {
             imageName={bouquetThumb}
             oneSelected={oneSelected}
             toggleOneSelected={toggleOneSelected}
+            setState={setState}
           />
         </div>
         <div className={styles.thumbnail}>
@@ -55,6 +61,7 @@ function ArrangementType({ page, setPage, first }) {
             imageName={basketThumb}
             oneSelected={oneSelected}
             toggleOneSelected={toggleOneSelected}
+            setState={setState}
           />
         </div>
       </div>

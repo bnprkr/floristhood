@@ -12,7 +12,8 @@ import styles from "./OrderForm.module.css";
 
 function OrderForm() {
   const [page, setPage] = useState(1);
-  const [primaryFlower, setPrimaryFlower] = useState("none yet");
+  const [arrangementType, setArrangementType] = useState();
+  const [primaryFlower, setPrimaryFlower] = useState();
   const [shippingValues, setShippingValues] = useState({
     firstname: "A",
     lastname: "Person",
@@ -30,7 +31,12 @@ function OrderForm() {
         switch (page) {
           case 1:
             return (
-              <ArrangementType page={page} setPage={setPage} first={true} />
+              <ArrangementType
+                page={page}
+                setPage={setPage}
+                first={true}
+                setArrangementType={setArrangementType}
+              />
             );
           case 2:
             return (
@@ -74,6 +80,7 @@ function OrderForm() {
                 page={page}
                 setPage={setPage}
                 shippingValues={shippingValues}
+                arrangementType={arrangementType}
               />
             );
           case 7:

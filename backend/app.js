@@ -11,6 +11,16 @@ const isProduction = environment === "production";
 const app = express();
 const routes = require("./routes");
 
+// middleware to redirect to https if not secure
+// uses header set by heroku as request.secure will always be false
+// on heroku hosted apps due to how routing implemented
+if (process.env.NODE_ENV === "production") {
+  app.use((req, res, next) => {
+    if (req.header("x-forwarded-proto") !== "https")
+      res.redirect(`https://${req.header("host")}${req.url}`);
+    else next();
+  });
+}
 app.use(morgan("dev"));
 app.use(cookieParser());
 app.use(express.json());

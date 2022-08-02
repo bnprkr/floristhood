@@ -13,7 +13,7 @@ const routes = require("./routes");
 
 // middleware to redirect to https if not secure
 // uses header set by heroku as request.secure will always be false
-// on heroku hosted apps due to how routing implemented
+// on heroku hosted apps due to routing implementation
 if (process.env.NODE_ENV === "production") {
   app.use((req, res, next) => {
     if (req.header("x-forwarded-proto") !== "https")

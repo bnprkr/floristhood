@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e22b842.css",
+    "main.js": "/static/js/main.13b684fd.js",
+    "static/media/flowers-main.jpg": "/static/media/flowers-main.31f331b2a9929e7ea1d9.jpg",
+    "static/media/basket.jpg": "/static/media/basket.1a595fc6deafdcb9f8a4.jpg",
+    "static/media/boxed.jpg": "/static/media/boxed.69f14247fae7faf2ed77.jpg",
+    "static/media/thumb5.jpg": "/static/media/thumb5.f68ec51da05775c61f82.jpg",
+    "static/media/thumb4.jpg": "/static/media/thumb4.6ff0e8730463f6e4bea7.jpg",
+    "static/media/new-2.jpg": "/static/media/new-2.d45af90efafbd9a79aa9.jpg",
+    "static/media/bouquet.jpg": "/static/media/bouquet.f20d91b0b1d69427ccc3.jpg",
+    "static/media/new-1.jpg": "/static/media/new-1.d92a2849bcca77b8c74c.jpg",
+    "static/media/featured-2.jpg": "/static/media/featured-2.62977f6904b7dafc6041.jpg",
+    "static/media/featured-5.jpg": "/static/media/featured-5.961bfb4b45eed508cf4b.jpg",
+    "static/media/thumb6.jpg": "/static/media/thumb6.b56ae9b7318c1ffe8968.jpg",
+    "static/media/thumb8.jpg": "/static/media/thumb8.c4733617130f00c63357.jpg",
+    "static/media/thumb3.jpg": "/static/media/thumb3.dfbe8242887b18d381af.jpg",
+    "static/media/thumb2.jpg": "/static/media/thumb2.df9fdd06ad28219fd47c.jpg",
+    "static/media/featured-4.jpg": "/static/media/featured-4.7a552673db775bebc78e.jpg",
+    "static/media/featured-3.jpg": "/static/media/featured-3.e89c8b8ef90af771c833.jpg",
+    "static/media/featured-1.jpg": "/static/media/featured-1.7450a6d4bd4b65eeff0b.jpg",
+    "static/media/thumb7.jpg": "/static/media/thumb7.462893bd3eb670ecb12e.jpg",
+    "static/media/thumb1.jpg": "/static/media/thumb1.667b54ee01b835c449ec.jpg",
+    "static/media/thumb9.jpg": "/static/media/thumb9.33313720174982f41052.jpg",
+    "index.html": "/index.html",
+    "main.1e22b842.css.map": "/static/css/main.1e22b842.css.map",
+    "main.13b684fd.js.map": "/static/js/main.13b684fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e22b842.css",
+    "static/js/main.13b684fd.js"
+  ]
+}

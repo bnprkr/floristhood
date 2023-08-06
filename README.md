@@ -6,7 +6,7 @@ A demo of a responsive floristry website in React, featuring designed elements, 
 
 ## Live demo (note: server takes ~20 seconds to start)
 
-https://floristhood.herokuapp.com/
+https://floristhood.benparker.net
 
 ## Technologies
 

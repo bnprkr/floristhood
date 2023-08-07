@@ -1,12 +1,12 @@
 # Floristhood
 
+## Live demo
+
+https://floristhood.benparker.net
+
 ## Introduction
 
 A demo of a responsive floristry website in React, featuring designed elements, a bouquet creation order flow and user registration/login.
-
-## Live demo (note: server takes ~20 seconds to start)
-
-https://floristhood.benparker.net
 
 ## Technologies
 
